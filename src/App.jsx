@@ -17,7 +17,7 @@ function App() {
     <div className="flex h-screen">
       <Navbar activeSection={activeSection} />
       <div className="w-full font-serif overflow-auto p-5">
-        <section ref={aboutMeRef} className="h-screen flex flex-col items-center justify-center gap-y-5 text-white">
+        <section id="aboutme" ref={aboutMeRef} className="h-screen flex flex-col items-center justify-center gap-y-5 text-white">
           <div className="w-36 h-36 sm:w-44 sm:h-44 lg:w-64 lg:h-64 rounded-full overflow-hidden">
             <img src="profile.jpg" alt="Profile Image" className="w-full h-full object-cover" />
           </div>
@@ -28,7 +28,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section ref={skillsRef} className="h-screen flex items-center justify-center text-white">
+        <section id="skills" ref={skillsRef} className="h-screen flex items-center justify-center text-white">
           <div >
             <h1 className='text-center text-4xl'>Skills</h1>
             <div className='text-l md:text-2xl'>
@@ -36,7 +36,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section ref={experienceRef} className="h-screen flex items-center justify-center text-white">
+        <section id="experience" ref={experienceRef} className="h-screen flex items-center justify-center text-white">
           <div >
             <h1 className='text-center text-4xl'>Experience</h1>
             <div className='text-l md:text-2xl'>
@@ -44,7 +44,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section ref={projectsRef} className="h-screen flex items-center justify-center text-white">
+        <section id="projects" ref={projectsRef} className="h-screen flex items-center justify-center text-white">
           <div >
             <h1 className='text-center text-4xl'>Projects</h1>
             <div className='text-l md:text-2xl'>
@@ -52,7 +52,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section ref={contactsRef} className="h-screen flex items-center justify-center text-white">
+        <section id="contacts" ref={contactsRef} className="h-screen flex items-center justify-center text-white">
           <div >
             <h1 className='text-center text-4xl'>Contacts</h1>
             <div className='text-l md:text-2xl'>
