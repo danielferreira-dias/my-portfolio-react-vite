@@ -1,11 +1,13 @@
-import React from 'react'
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../index.css'
 
 function Navbar() {
 
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
+
     const toggleDarkTheme = () => {
         document.body.classList.toggle('dark-theme');
+        setIsDarkTheme(!isDarkTheme);
     }
 
     // Add transition class to body after initial load
@@ -24,10 +26,10 @@ function Navbar() {
                 <a href="" className="mx-2 text-gray-400 hover:text-white">Contact</a>
             </div>
             <div className="hidden sm:flex items-center justify-end space-x-2 ml-10">
-                <button className="bg-zinc-800 px-2 text-white rounded w-fit h-12" onClick={toggleDarkTheme}>
+                <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? ' transition-colors duration-300 ease-in-out bg-gray-300 text-black' : 'transition-colors duration-300 ease-in-out'}`} onClick={toggleDarkTheme}>
                     <img src="moon.svg" alt="" className='h-7' />
                 </button>
-                <button className="bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12" >
+                <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out text-black' : 'transition-colors duration-300 ease-in-out'}`}>
                     <p>Resume</p>
                 </button>
             </div>
