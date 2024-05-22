@@ -5,11 +5,14 @@
 @layer base {
   body {
     @apply bg-zinc-700 border-2 border-blue-200;
-    transition: background-color 0.3s ease;
+
   }
 }
 
+.transition-bg-color {
+  transition: background-color 0.3s ease;
+}
+
 .dark-theme {
-  background-color: white;
-  border-color: white;
+  background-color: white; /* Dark background color */
 }

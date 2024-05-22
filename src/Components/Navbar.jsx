@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import '../index.css'
 
 function Navbar() {
@@ -6,6 +7,11 @@ function Navbar() {
     const toggleDarkTheme = () => {
         document.body.classList.toggle('dark-theme');
     }
+
+    // Add transition class to body after initial load
+    useEffect(() => {
+        document.body.classList.add('transition-bg-color');
+    }, []);
 
     return (
         <div className="h-20 w-full flex justify-between sm:justify-center items-center p-5 font-sans">
