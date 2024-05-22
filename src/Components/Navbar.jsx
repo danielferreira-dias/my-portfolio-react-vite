@@ -1,6 +1,11 @@
 import React from 'react'
+import '../index.css'
 
 function Navbar() {
+
+    const toggleDarkTheme = () => {
+        document.body.classList.toggle('dark-theme');
+    }
 
     return (
         <div className="h-20 w-full flex justify-between sm:justify-center items-center p-5 font-sans">
@@ -13,10 +18,10 @@ function Navbar() {
                 <a href="" className="mx-2 text-gray-400 hover:text-white">Contact</a>
             </div>
             <div className="hidden sm:flex items-center justify-end space-x-2 ml-10">
-                <button className="bg-zinc-800 px-2 text-white rounded w-fit h-12">
+                <button className="bg-zinc-800 px-2 text-white rounded w-fit h-12" onClick={toggleDarkTheme}>
                     <img src="moon.svg" alt="" className='h-7' />
                 </button>
-                <button className="bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12">
+                <button className="bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12" >
                     <p>Resume</p>
                 </button>
             </div>
