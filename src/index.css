@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 text-white
+    @apply bg-zinc-700 border-2 border-orange-300
   }
   
 }
