@@ -8,8 +8,8 @@ function Navbar() {
     const sunSrc = 'sun.svg'; // Dark theme SVG
 
     const toggleDarkTheme = () => {
-        document.body.classList.toggle('dark-theme');
         setIsDarkTheme(!isDarkTheme);
+        document.body.classList.toggle('dark-theme');
         setMoonSrc(isDarkTheme ? 'moon.svg' : sunSrc);
     }
 
@@ -29,10 +29,13 @@ function Navbar() {
                 <a href="" className="mx-2 text-gray-400 hover:text-white">Contact</a>
             </div>
             <div className="hidden sm:flex items-center justify-end space-x-2 ml-10">
-                <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? ' transition-colors duration-300 ease-in-out bg-gray-300 text-black' : 'transition-colors duration-300 ease-in-out'}`} onClick={toggleDarkTheme}>
+                <button className={` text-white px-4 py-2 rounded w-fit h-12 
+    ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
+                    onClick={toggleDarkTheme}>
                     <img src={moonSrc} alt="" className='h-7' />
                 </button>
-                <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out text-black' : 'transition-colors duration-300 ease-in-out'}`}>
+                <button className={`  px-4 py-2 rounded w-fit h-12 
+    ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}>
                     <p>Resume</p>
                 </button>
             </div>
