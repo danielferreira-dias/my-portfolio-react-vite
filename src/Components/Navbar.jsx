@@ -4,10 +4,13 @@ import '../index.css'
 function Navbar() {
 
     const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [moonSrc, setMoonSrc] = useState('moon.svg'); // Light theme SVG
+    const sunSrc = 'sun.svg'; // Dark theme SVG
 
     const toggleDarkTheme = () => {
         document.body.classList.toggle('dark-theme');
         setIsDarkTheme(!isDarkTheme);
+        setMoonSrc(isDarkTheme ? 'moon.svg' : sunSrc);
     }
 
     // Add transition class to body after initial load
@@ -27,7 +30,7 @@ function Navbar() {
             </div>
             <div className="hidden sm:flex items-center justify-end space-x-2 ml-10">
                 <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? ' transition-colors duration-300 ease-in-out bg-gray-300 text-black' : 'transition-colors duration-300 ease-in-out'}`} onClick={toggleDarkTheme}>
-                    <img src="moon.svg" alt="" className='h-7' />
+                    <img src={moonSrc} alt="" className='h-7' />
                 </button>
                 <button className={`bg-zinc-800 text-white px-4 py-2 rounded w-fit h-12 ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out text-black' : 'transition-colors duration-300 ease-in-out'}`}>
                     <p>Resume</p>
