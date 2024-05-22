@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div className="flex h-screen px-5 sm:px-10 py-5">
+    <div className="flex h-screen px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
       <Navbar></Navbar>
     </div>
   );
