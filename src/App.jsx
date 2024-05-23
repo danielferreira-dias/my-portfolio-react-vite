@@ -11,7 +11,7 @@ function App() {
     <div className="flex flex-col h-screen px-5 sm:px-10 xl:px-40 2xl:px-80 py-5">
       <Navbar></Navbar>
       <section className="w-full h-svh bg-white">
-        <div className="w-full h-full flex flex-col p-5">
+        <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
           <div className='flex items-start xs:items-center justify-center xs:justify-normal h-fit xs:h-full mx-5 my-5 lg:mx-10'>
             <div className='flex flex-col gap-y-4 my-10 xs:my-0'>
@@ -21,9 +21,9 @@ function App() {
             </div>
           </div>
           {/* Symbol Div */}
-          <div className="flex-grow relative">
-            <div className="absolute bottom-0 right-0 flex flex-row xs:flex-col items-center gap-5">
-              <span className="w-0.5 h-40 bg-red-400"></span>
+          <div className="relative h-fit">
+            <div className="flex flex-row justify-center xs:justify-normal xs:absolute bottom-0 right-0 xs:flex-col items-center gap-5">
+              <span className="w-1 h-4 xs:h-16 bg-primary rotate-90 xs:rotate-0"></span>
               <img src="linkedin-dark.svg" alt="" className="w-10 h-5" />
               <img src="github.svg" alt="" className="w-10 h-10" />
             </div>
