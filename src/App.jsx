@@ -1,15 +1,20 @@
 import './App.css'
 import Navbar from './Components/Navbar'
 import { useInView } from 'react-intersection-observer';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
 
+  const [dataFromChild, setDataFromChild] = useState(null);
 
+  const handleDataFromChild = (data) => {
+    setDataFromChild(data);
+    console.log('Data received from child:', dataFromChild);
+  };
 
   return (
     <div className="flex flex-col h-screen px-5 sm:px-10 xl:px-40 2xl:px-80 py-5">
-      <Navbar></Navbar>
+      <Navbar onDataFromChild={handleDataFromChild}></Navbar>
       <section className="w-full h-svh bg-white">
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
