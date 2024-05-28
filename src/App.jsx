@@ -9,7 +9,6 @@ function App() {
 
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
-    console.log('Data received from child:', dataFromChild);
   };
 
   return (
