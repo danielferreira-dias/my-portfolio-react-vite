@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
-      <section className="w-full h-svh bg-white">
+      <section className={`w-full h-svh ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
           <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
