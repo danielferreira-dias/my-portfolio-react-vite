@@ -17,7 +17,7 @@ function App() {
       <section className="w-full h-svh bg-white">
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
-          <div className='flex items-start xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
+          <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
             <div className='flex flex-col gap-y-4 my-10 xs:my-0'>
               <p className="text-xl sm:text-2xl lg:text-5xl">I'm <span className="text-2xl sm:text-3xl lg:text-6xl text-primary">Daniel Dias</span></p>
               <p className="text-lg sm:text-xl lg:text-3xl">Full Stack Web Developer</p>
@@ -25,7 +25,7 @@ function App() {
             </div>
 
             {/* Image Div */}
-            <div className="relative h-fit w-42  xs:flex xs:w-60 md:w-72 lg:w-80 xl:w-96 xs:ml-5">
+            <div className="relative w-56 xs:flex xs:w-60 md:w-72 lg:w-80 xl:w-96 xs:ml-5">
               <img src="profile.jpg" alt="Profile" className=" rounded border-2" />
             </div>
           </div>
