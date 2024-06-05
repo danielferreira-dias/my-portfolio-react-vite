@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
+    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-64 py-5">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
 
       <section className={`w-full h-screen  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
@@ -63,7 +63,11 @@ function App() {
         </div>
       </section>
 
-      <section className={`w-full h-fit my-5 bg-white  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <h1 className='text-2xl xl:text-4xl '>Skills</h1>
+        <div className='h-64 bg-white mt-4'>
+
+        </div>
       </section>
 
     </div>
