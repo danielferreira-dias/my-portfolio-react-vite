@@ -66,18 +66,24 @@ function App() {
 
       <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>Skills</h1>
-        <div className='h-64 mt-4 bg-white text-black p-2'>
+        <div className='h-fit mt-4 bg-white text-black p-2 grid grid-cols-1 md:grid-cols-2 items-center justify-center'>
+
           {/* Front-End Skills */}
-          <div className='flex flex-col justify-center text-center w-fit'>
+          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
             <h1 className='text-xl'>Front End</h1>
             <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
               <Skillbox
-                skillName="React"
+                skillName="HTML"
                 iconSrc="react.svg"
                 isDarkMode={dataFromChild}
               />
               <Skillbox
-                skillName="Tailwind"
+                skillName="CSS"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="Javascript"
                 iconSrc="tailwind.svg"
                 isDarkMode={dataFromChild}
               />
@@ -85,6 +91,48 @@ function App() {
           </div>
 
           {/* Back-End Skills */}
+          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
+            <h1 className='text-xl'>Back End</h1>
+            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
+              <Skillbox
+                skillName="HTML"
+                iconSrc="react.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="CSS"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="Javascript"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+            </div>
+          </div>
+
+          {/* Tools */}
+          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
+            <h1 className='text-xl'>Tools</h1>
+            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
+              <Skillbox
+                skillName="HTML"
+                iconSrc="react.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="CSS"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="Javascript"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
