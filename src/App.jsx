@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
 
-  const [dataFromChild, setDataFromChild] = useState(null);
+  const [dataFromChild, setDataFromChild] = useState(true);
 
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
@@ -15,7 +15,7 @@ function App() {
     <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
 
-      <section className={`w-full h-screen ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-screen  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
           <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
@@ -43,7 +43,7 @@ function App() {
         </div>
       </section>
 
-      <section className={`w-full h-64 bg-white ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit bg-white ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl text-black'>About</h1>
         <div className='flex flex-row mt-2'>
           <div className="flex mb-4 mt-3">
