@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './Components/Navbar'
+import Skillbox from './Components/SkillBox';
 import { useInView } from 'react-intersection-observer';
 import React, { useState, useEffect } from 'react';
 
@@ -65,8 +66,25 @@ function App() {
 
       <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>Skills</h1>
-        <div className='h-64 bg-white mt-4'>
+        <div className='h-64 mt-4 bg-white text-black p-2'>
+          {/* Front-End Skills */}
+          <div className='flex flex-col justify-center text-center w-fit'>
+            <h1 className='text-xl'>Front End</h1>
+            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
+              <Skillbox
+                skillName="React"
+                iconSrc="react.svg"
+                isDarkMode={dataFromChild}
+              />
+              <Skillbox
+                skillName="Tailwind"
+                iconSrc="tailwind.svg"
+                isDarkMode={dataFromChild}
+              />
+            </div>
+          </div>
 
+          {/* Back-End Skills */}
         </div>
       </section>
 
