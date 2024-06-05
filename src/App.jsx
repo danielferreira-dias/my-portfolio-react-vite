@@ -12,9 +12,10 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
+    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-60 py-5">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
-      <section className={`w-full h-svh ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+
+      <section className={`w-full h-screen ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
           <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
@@ -39,6 +40,18 @@ function App() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <section className={`w-full h-64 bg-white ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <h1 className='text-2xl text-black'>About</h1>
+        <div className='flex flex-row mt-2'>
+          <div className="flex mb-4 mt-3">
+            <span className="block w-8 h-1 bg-primary mr-2"></span>
+          </div>
+          <p className="text-lg leading-relaxed text-black text-left">
+            I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth.
+          </p>
         </div>
       </section>
     </div>
