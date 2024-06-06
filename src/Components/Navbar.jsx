@@ -25,7 +25,7 @@ function Navbar({ onDataFromChild }) {
 
     useEffect(() => {
         const checkScreenSize = () => {
-            setIsSmallScreen(window.innerWidth < 475); // Adjust the breakpoint as needed
+            setIsSmallScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
         };
         checkScreenSize(); // Initial check
         window.addEventListener('resize', checkScreenSize);
@@ -45,7 +45,7 @@ function Navbar({ onDataFromChild }) {
                 <img src="react.svg" alt="" className="w-10 h-auto" />
             </div>
             {isSmallScreen ? (
-                <div className="xs:flex xs:flex-grow justify-center lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
+                <div className="xs:flex xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
                     <div className="relative inline-block text-left">
                         <button
                             onClick={toggleMenu}
@@ -94,7 +94,7 @@ function Navbar({ onDataFromChild }) {
                     <a href="#" className={`mx-2 text-gray-400 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Contact</a>
                 </div>
             )}
-            <div className="hidden sm:flex items-center justify-end space-x-2 ml-10">
+            <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
                 <button className={` text-white px-4 py-2 rounded w-fit h-12 
     ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
                     onClick={toggleDarkTheme}>

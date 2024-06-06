@@ -37,7 +37,7 @@ function App() {
 
   const toolskills = [
     { skillName: "Github", iconSrc: "html.svg" },
-    { skillName: "Fork", iconSrc: "css.svg" },
+    { skillName: "Fork", iconSrc: "fork.svg" },
     { skillName: "Postman", iconSrc: "javascript.svg" },
   ];
 
