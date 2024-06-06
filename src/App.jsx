@@ -14,6 +14,33 @@ function App() {
   const [gitHubMode, setGitHubMode] = useState('github-light.svg'); // Dark theme SVG Gitub
   const githubDark = 'github-dark.svg'
 
+  const frontEndSkills = [
+    { skillName: "HTML", iconSrc: "html.svg" },
+    { skillName: "CSS", iconSrc: "css.svg" },
+    { skillName: "Javascript", iconSrc: "javascript.svg" },
+    { skillName: "React", iconSrc: "react.svg" },
+    { skillName: "Tailwind", iconSrc: "tailwind.svg" },
+    { skillName: "Kotlin", iconSrc: "kotlin.svg" },
+  ];
+
+  const backEndSkills = [
+    { skillName: "Node.JS", iconSrc: "node.svg" },
+    { skillName: "PHP", iconSrc: "php.svg" },
+    { skillName: "Python", iconSrc: "python.svg" },
+  ];
+
+  const dataBaseskills = [
+    { skillName: "MySQL", iconSrc: "mysql.svg" },
+    { skillName: "MongoDB", iconSrc: "mongodb.svg" },
+    { skillName: "Firebase", iconSrc: "firebase.svg" },
+  ];
+
+  const toolskills = [
+    { skillName: "Github", iconSrc: "html.svg" },
+    { skillName: "Fork", iconSrc: "css.svg" },
+    { skillName: "Postman", iconSrc: "javascript.svg" },
+  ];
+
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
     setLinkedinMode(dataFromChild ? linkedinDark : 'linkedin-light.svg');
@@ -66,71 +93,65 @@ function App() {
 
       <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>Skills</h1>
-        <div className='h-fit mt-4 bg-white text-black p-2 grid grid-cols-1 md:grid-cols-2 items-center justify-center'>
+        <div className='h-fit mt-4  p-2 grid grid-cols-1 md:grid-cols-2 justify-center items-start'>
 
           {/* Front-End Skills */}
-          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
+          <div className='flex flex-col justify-center text-center w-full  items-center'>
             <h1 className='text-xl'>Front End</h1>
-            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
-              <Skillbox
-                skillName="HTML"
-                iconSrc="react.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="CSS"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="Javascript"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
+            <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-2 w-fit h-max justify-center xs:justify-center">
+              {frontEndSkills.map((skill, index) => (
+                <Skillbox
+                  key={index}
+                  skillName={skill.skillName}
+                  iconSrc={skill.iconSrc}
+                  isDarkMode={dataFromChild}
+                />
+              ))}
             </div>
           </div>
 
           {/* Back-End Skills */}
-          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
+          <div className='flex flex-col justify-center text-center w-full  items-center'>
             <h1 className='text-xl'>Back End</h1>
-            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
-              <Skillbox
-                skillName="HTML"
-                iconSrc="react.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="CSS"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="Javascript"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
+            <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-2 w-fit h-max justify-center xs:justify-center">
+              {backEndSkills.map((skill, index) => (
+                <Skillbox
+                  key={index}
+                  skillName={skill.skillName}
+                  iconSrc={skill.iconSrc}
+                  isDarkMode={dataFromChild}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Databases */}
+          <div className='flex flex-col justify-center text-center w-full  items-center'>
+            <h1 className='text-xl'>Databases</h1>
+            <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-2 w-fit h-max justify-center xs:justify-center">
+              {dataBaseskills.map((skill, index) => (
+                <Skillbox
+                  key={index}
+                  skillName={skill.skillName}
+                  iconSrc={skill.iconSrc}
+                  isDarkMode={dataFromChild}
+                />
+              ))}
             </div>
           </div>
 
           {/* Tools */}
-          <div className='flex flex-col justify-center text-center w-full md:w-fit items-center'>
-            <h1 className='text-xl'>Tools</h1>
-            <div className="p-4 flex flex-row gap-x-5 flex-wrap w-fit">
-              <Skillbox
-                skillName="HTML"
-                iconSrc="react.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="CSS"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
-              <Skillbox
-                skillName="Javascript"
-                iconSrc="tailwind.svg"
-                isDarkMode={dataFromChild}
-              />
+          <div className='flex flex-col justify-center text-center w-full  items-center'>
+            <h1 className='text-xl'>Tools/Technologies</h1>
+            <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-2 w-fit h-max justify-center xs:justify-center">
+              {toolskills.map((skill, index) => (
+                <Skillbox
+                  key={index}
+                  skillName={skill.skillName}
+                  iconSrc={skill.iconSrc}
+                  isDarkMode={dataFromChild}
+                />
+              ))}
             </div>
           </div>
         </div>
