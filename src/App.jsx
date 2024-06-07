@@ -50,10 +50,10 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-64 py-5 font-montserrat">
+    <div className="flex flex-col  py-5 font-montserrat">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
 
-      <section className={`w-full h-screen  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-screen px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
           {/* Introduction Div */}
           <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
@@ -82,7 +82,7 @@ function App() {
         </div>
       </section>
 
-      <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>About</h1>
         <div className='flex flex-row mt-4'>
           <div className="flex mt-3 ">
@@ -94,7 +94,7 @@ function App() {
         </div>
       </section>
 
-      <section className={`w-full h-fit my-8  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>Skills</h1>
         <div className='h-fit mt-8 gap-12 grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 justify-center items-start'>
 
@@ -129,7 +129,7 @@ function App() {
           </div>
 
           {/* Databases */}
-          <div className='flex flex-col justify-center text-center w-full  items-center'>
+          <div className='flex flex-col justify-center text-center w-full  items-center '>
             <h1 className='text-xl'>Databases</h1>
             <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-2 w-fit h-max justify-center xs:justify-center">
               {dataBaseskills.map((skill, index) => (
@@ -155,6 +155,17 @@ function App() {
                   isDarkMode={dataFromChild}
                 />
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`w-full h-fit my-8 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <div className='px-5 sm:px-10 xl:px-40 2xl:px-64  '>
+          <h1 className='text-2xl xl:text-4xl '>Experience</h1>
+          <div className='h-fit mt-10'>
+            <div className=' bg-blue-950 h-64 -left-10 top-10 w-0.5'>
+              <div className='bg-white w-2 h-2 rounded-full absolute'></div>
             </div>
           </div>
         </div>

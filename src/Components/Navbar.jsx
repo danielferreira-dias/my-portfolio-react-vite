@@ -40,9 +40,9 @@ function Navbar({ onDataFromChild }) {
     };
 
     return (
-        <div className="h-20 w-full flex justify-center 2xs:justify-between sm:justify-center items-center p-5 font-sans">
+        <div className="h-20 w-full px-5 sm:px-10 xl:px-40 2xl:px-64 flex justify-center 2xs:justify-between sm:justify-center items-center font-sans">
             <div className="sm:flex-grow hidden 2xs:flex">
-                <img src="react.svg" alt="" className="w-10 h-auto" />
+                <img src="react.svg" alt="" className="w-10 h-auto 2xl:w-14" />
             </div>
             {isSmallScreen ? (
                 <div className="flex flex-row xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
@@ -89,14 +89,14 @@ function Navbar({ onDataFromChild }) {
                     </div>
                 </div>
             ) : (
-                <div className="hidden xs:flex xs:flex-grow justify-center lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
-                    <a href="#" className={`mx-2 text-gray-400 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>About</a>
-                    <a href="#" className={`mx-2 text-gray-400 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Portfolio</a>
-                    <a href="#" className={`mx-2 text-gray-400 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Contact</a>
+                <div className="hidden xs:flex xs:flex-grow justify-center lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl 2xl:text-4xl">
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>About</a>
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Portfolio</a>
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Contact</a>
                 </div>
             )}
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
-                <button className={` px-4 py-2 rounded w-fit h-12 flex items-center justify-center border border-gray-300 shadow-sm 
+                <button className={` px-4 py-2 rounded w-fit h-12  flex items-center justify-center border border-gray-300 shadow-sm 
     ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-200 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
                     onClick={toggleDarkTheme}>
                     <img src={moonSrc} alt="" className='h-7' />
