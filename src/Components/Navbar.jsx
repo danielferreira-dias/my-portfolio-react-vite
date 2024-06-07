@@ -50,12 +50,12 @@ function Navbar({ onDataFromChild }) {
                         href="/resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`px-2 py-2 rounded w-fit h-9 flex items-center justify-center border border-gray-300 shadow-sm ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}
+                        className={`px-2 py-2 rounded w-fit h-9 flex items-center justify-center border border-gray-300 shadow-sm ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 text-white duration-300 ease-in-out'}`}
                     >
                         <p>Resume</p>
                     </a>
                     <button
-                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
+                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
                         onClick={toggleDarkTheme}
                     >
                         <img src={moonSrc} alt="" className='h-4' />
@@ -63,8 +63,7 @@ function Navbar({ onDataFromChild }) {
                     <div className="relative inline-block text-left">
                         <button
                             onClick={toggleMenu}
-                            className="flex items-center justify-center w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
-                        >
+                            className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}                        >
                             <img src="menu.52609857.svg" alt="Menu" />
                         </button>
                         {isMenuOpen && (
@@ -98,7 +97,7 @@ function Navbar({ onDataFromChild }) {
             )}
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
                 <button className={` px-4 py-2 rounded w-fit h-12 flex items-center justify-center border border-gray-300 shadow-sm 
-    ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
+    ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-200 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
                     onClick={toggleDarkTheme}>
                     <img src={moonSrc} alt="" className='h-7' />
                 </button>
@@ -107,7 +106,7 @@ function Navbar({ onDataFromChild }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`px-4 py-2 rounded w-fit h-12 flex items-center justify-center border border-gray-300 shadow-sm
-          ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}
+          ${isDarkTheme ? ' bg-gradient-to-r from-white to-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 text-white duration-300 ease-in-out'}`}
                 >
                     <p>Resume</p>
                 </a>
