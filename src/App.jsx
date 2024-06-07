@@ -39,6 +39,8 @@ function App() {
     { skillName: "Github", iconSrc: "html.svg" },
     { skillName: "Fork", iconSrc: "fork.svg" },
     { skillName: "Postman", iconSrc: "javascript.svg" },
+    { skillName: "Slack", iconSrc: "slack.svg" },
+    { skillName: "Jenkins", iconSrc: "jenkins.svg" },
   ];
 
   const handleDataFromChild = (data) => {
@@ -48,7 +50,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-64 py-5">
+    <div className="flex flex-col px-5 sm:px-10 xl:px-40 2xl:px-64 py-5 font-montserrat">
       <Navbar onDataFromChild={handleDataFromChild}></Navbar>
 
       <section className={`w-full h-screen  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
@@ -92,9 +94,9 @@ function App() {
         </div>
       </section>
 
-      <section className={`w-full h-fit my-5  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit my-8  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <h1 className='text-2xl xl:text-4xl '>Skills</h1>
-        <div className='h-fit mt-4  p-2 grid grid-cols-1 md:grid-cols-2 justify-center items-start'>
+        <div className='h-fit mt-8  grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 justify-center items-start'>
 
           {/* Front-End Skills */}
           <div className='flex flex-col justify-center text-center w-full  items-center'>

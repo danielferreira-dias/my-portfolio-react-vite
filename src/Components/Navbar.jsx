@@ -40,12 +40,26 @@ function Navbar({ onDataFromChild }) {
     };
 
     return (
-        <div className="h-20 w-full flex justify-between sm:justify-center items-center p-5 font-sans">
-            <div className="sm:flex-grow">
+        <div className="h-20 w-full flex justify-center 2xs:justify-between sm:justify-center items-center p-5 font-sans">
+            <div className="sm:flex-grow hidden 2xs:flex">
                 <img src="react.svg" alt="" className="w-10 h-auto" />
             </div>
             {isSmallScreen ? (
-                <div className="xs:flex xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
+                <div className="flex flex-row xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`px-2 py-2 rounded w-fit h-9 flex items-center justify-center border border-gray-300 shadow-sm ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}
+                    >
+                        <p>Resume</p>
+                    </a>
+                    <button
+                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
+                        onClick={toggleDarkTheme}
+                    >
+                        <img src={moonSrc} alt="" className='h-4' />
+                    </button>
                     <div className="relative inline-block text-left">
                         <button
                             onClick={toggleMenu}
@@ -68,20 +82,8 @@ function Navbar({ onDataFromChild }) {
                                         <span className="w-7 h-1 xs:h-16 bg-primary"></span>
                                         <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem">Contact</a>
                                     </div>
-                                    <button
-                                        className={`w-full text-white px-4 py-2 my-2 rounded h-12 ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
-                                        onClick={toggleDarkTheme}
-                                    >
-                                        <img src={moonSrc} alt="" className='h-7' />
-                                    </button>
-                                    <a
-                                        href="/resume.pdf"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`px-4 py-2 rounded w-full h-12 flex items-center justify-center ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}
-                                    >
-                                        <p>Resume</p>
-                                    </a>
+
+
                                 </div>
                             </div>
                         )}
@@ -95,7 +97,7 @@ function Navbar({ onDataFromChild }) {
                 </div>
             )}
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
-                <button className={` text-white px-4 py-2 rounded w-fit h-12 
+                <button className={` px-4 py-2 rounded w-fit h-12 flex items-center justify-center border border-gray-300 shadow-sm 
     ${isDarkTheme ? 'bg-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 duration-300 ease-in-out'}`}
                     onClick={toggleDarkTheme}>
                     <img src={moonSrc} alt="" className='h-7' />
@@ -104,7 +106,7 @@ function Navbar({ onDataFromChild }) {
                     href="/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-4 py-2 rounded w-fit h-12 flex items-center justify-center
+                    className={`px-4 py-2 rounded w-fit h-12 flex items-center justify-center border border-gray-300 shadow-sm
           ${isDarkTheme ? 'bg-gray-300 text-black transition-colors duration-300 ease-in-out' : 'transition-colors bg-zinc-800 text-white duration-300 ease-in-out'}`}
                 >
                     <p>Resume</p>

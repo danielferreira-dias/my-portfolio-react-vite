@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     screens: {
+      '2xs': '345px',
+      // => @media (min-width: 345px) { ... }
+
       'xs': '475px',
       // => @media (min-width: 475px) { ... }
 
@@ -28,6 +31,10 @@ export default {
     extend: {
       colors: {
         'primary': '#BFDBFE',
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        // Add more custom font families as needed
       },
     },
   },
