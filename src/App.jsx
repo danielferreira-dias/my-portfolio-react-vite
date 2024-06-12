@@ -61,7 +61,7 @@ function App() {
 
       <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <About
-          isDarkMode={dataFromChild}
+
         />
       </section>
 
