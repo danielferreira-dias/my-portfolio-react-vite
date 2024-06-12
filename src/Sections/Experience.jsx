@@ -12,9 +12,11 @@ const Experience = () => {
                         <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className='mt-10 md:top-1/2 h-fit flex flex-col overflow-hidden p-2'>
-                        <h1 className='text-xl'>Luduscristaltec</h1>
-                        <p>06/09/2021 - Present</p>
+                    <div className='mt-10 md:top-1/2 flex flex-col justify-between overflow-hidden p-2'>
+                        <div className='flex flex-col'>
+                            <h1 className='text-xl'>Luduscristaltec</h1>
+                            <p>06/09/2021 - Present</p>
+                        </div>
                         <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                         <div className='flex flex-col'>
                             <p>Technologies</p>
@@ -28,9 +30,11 @@ const Experience = () => {
                         <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className=' h-fit flex flex-col overflow-hidden p-2'>
-                        <h1 className='text-xl'>ITSector</h1>
-                        <p>06/09/2021 - Present</p>
+                    <div className=' justify-between  flex flex-col overflow-hidden p-2'>
+                        <div className='flex flex-col'>
+                            <h1 className='text-xl'>Luduscristaltec</h1>
+                            <p>06/09/2021 - Present</p>
+                        </div>
                         <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                         <div className='flex flex-col'>
                             <p>Technologies</p>
@@ -44,9 +48,11 @@ const Experience = () => {
                         <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className=' h-fit flex flex-col overflow-hidden p-2'>
-                        <h1 className='text-xl'>Universidade da Maia</h1>
-                        <p>06/09/2021 - Present</p>
+                    <div className=' justify-between  flex flex-col overflow-hidden p-2'>
+                        <div className='flex flex-col'>
+                            <h1 className='text-xl'>Luduscristaltec</h1>
+                            <p>06/09/2021 - Present</p>
+                        </div>
                         <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                         <div className='flex flex-col'>
                             <p>Technologies</p>
@@ -60,9 +66,11 @@ const Experience = () => {
 
                 <div className='flex flex-row justify-start gap-8'>
                     <div className='flex flex-row w-1/2 h-96 lg:h-80 '>
-                        <div className=' h-fit flex  flex-col overflow-hidden p-2'>
-                            <h1 className='text-xl'>Universidade da Maia</h1>
-                            <p>06/09/2021 - Present</p>
+                        <div className=' justify-between  flex  flex-col p-2'>
+                            <div className='flex flex-col'>
+                                <h1 className='text-xl'>Luduscristaltec</h1>
+                                <p>06/09/2021 - Present</p>
+                            </div>
                             <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                             <div className='flex flex-col'>
                                 <p>Technologies</p>
@@ -83,9 +91,11 @@ const Experience = () => {
                             <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
-                        <div className=' h-fit flex flex-col p-2 ml-5 overflow-hidden'>
-                            <h1 className='text-xl'>Universidade da Maia</h1>
-                            <p>06/09/2021 - Present</p>
+                        <div className=' justify-between  flex flex-col p-2 ml-5'>
+                            <div className='flex flex-col'>
+                                <h1 className='text-xl'>Luduscristaltec</h1>
+                                <p>06/09/2021 - Present</p>
+                            </div>
                             <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                             <div className='flex flex-col'>
                                 <p>Technologies</p>
@@ -96,9 +106,11 @@ const Experience = () => {
 
                 <div className='flex flex-row justify-start gap-8'>
                     <div className='flex flex-row w-1/2 h-fit '>
-                        <div className=' h-fit flex  flex-col overflow-hidden p-2'>
-                            <h1 className='text-xl'>Universidade da Maia</h1>
-                            <p>06/09/2021 - Present</p>
+                        <div className=' justify-between flex  flex-col p-2'>
+                            <div className='flex flex-col'>
+                                <h1 className='text-xl'>Luduscristaltec</h1>
+                                <p>06/09/2021 - Present</p>
+                            </div>
                             <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
                             <div className='flex flex-col'>
                                 <p>Technologies</p>
