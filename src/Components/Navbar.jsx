@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css'
 
-function Navbar({ onDataFromChild }) {
+
+const Navbar = ({ onDataFromChild }) => {
 
     // Dark Theme 
     const [isDarkTheme, setIsDarkTheme] = useState(false);

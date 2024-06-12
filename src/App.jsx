@@ -5,6 +5,7 @@ import Experience from './Sections/Experience';
 import Skills from './Sections/Skills';
 import { useInView } from 'react-intersection-observer';
 import React, { useState, useEffect } from 'react';
+import About from './Sections/About';
 
 function App() {
 
@@ -59,15 +60,9 @@ function App() {
       </section>
 
       <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-        <h1 className='text-2xl xl:text-4xl '>About</h1>
-        <div className='flex flex-row mt-4'>
-          <div className="flex mt-3 ">
-            <span className="block w-8 h-1 bg-primary mr-2"></span>
-          </div>
-          <p className="text-lg lg:text-xl xl:text-2xl leading-relaxed  text-left">
-            I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth.
-          </p>
-        </div>
+        <About
+          isDarkMode={dataFromChild}
+        />
       </section>
 
       <section className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
