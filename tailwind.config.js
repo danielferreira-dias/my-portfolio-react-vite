@@ -39,6 +39,16 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         // Add more custom font families as needed
       },
+      keyframes: {
+        scaleAndFade: {
+          '0%': { transform: 'scale(1.5)', opacity: '1' },
+          '50%': { transform: 'scale(1)', opacity: '0' },
+          '100%': { transform: 'scale(1.5)', opacity: '1' },
+        },
+      },
+      animation: {
+        scaleAndFade: 'scaleAndFade 2s infinite',
+      },
     },
   },
   plugins: [],
