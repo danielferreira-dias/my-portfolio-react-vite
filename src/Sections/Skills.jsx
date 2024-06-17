@@ -26,7 +26,7 @@ const Skills = ({ isDarkMode }) => {
     ];
 
     const toolskills = [
-        { skillName: "Github", iconSrc: "html.svg" },
+        { skillName: "Github", iconSrc: "github-dark.svg" },
         { skillName: "Fork", iconSrc: "fork.svg" },
         { skillName: "Postman", iconSrc: "javascript.svg" },
         { skillName: "Slack", iconSrc: "slack.svg" },
