@@ -161,11 +161,20 @@ const Experience = ({ isDarkMode }) => {
                             <div className='flex flex-col'>
                                 <h1 className='text-xl'>Luduscristaltec</h1>
                                 <p>06/09/2021 - Present</p>
+                                <p className='text-sm italic'>Game/Front-End Developer</p>
                             </div>
-                            <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
-                            <div className='flex flex-col w-full h-fit'>
-                                <p className='font-bold'>Technologies</p>
-                                <div className='grid grid-cols-8 w-full h-fit  p-0.5 gap-2'>
+                            <div className='flex flex-col gap-y-2'>
+                                <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
+                                    Further more, I also developed an extensive "info" section. This section serves as a guide to the many features of the
+                                    game to better understanding of the user. Utilizing <span className="text-primary font-semibold">front-end technologies</span>, I integrated frontend frameworks such as React.js.
+                                    This integration was important in creating an intuitive, user-friendly interface.
+                                </p>
+                                <p>I also specialize in <span className="text-primary font-semibold"> developing casino slot games for both mobile and laptop platforms </span> using the
+                                    company proprietary language, which is rooted in C.</p>
+                            </div>
+                            <div className='flex flex-col w-full h-fit '>
+                                <p className='font-bold mt-2'>Technologies</p>
+                                <div className='grid grid-cols-8 2xl:grid-cols-9 w-full h-fit  p-0.5 gap-2 mt-2'>
                                     {thirdExperience.map((skill, index) => (
                                         <SmallSkillBox
                                             key={index}
@@ -194,13 +203,19 @@ const Experience = ({ isDarkMode }) => {
                         </div>
                         <div className=' justify-between  flex flex-col p-2 ml-5'>
                             <div className='flex flex-col'>
-                                <h1 className='text-xl'>Luduscristaltec</h1>
-                                <p>06/09/2021 - Present</p>
+                                <h1 className='text-xl'>ITSector</h1>
+                                <p>06/2019 - 12/2019</p>
+                                <p className='text-sm italic'>Front-End Developer</p>
                             </div>
-                            <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
-                            <div className='flex flex-col w-full'>
-                                <p className='font-bold'>Technologies</p>
-                                <div className='grid grid-cols-8 w-full h-9  p-0.5 gap-2'>
+                            <div className='flex flex-col gap-y-2'>
+                                <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">front-end development</span> to improve its
+                                    interactivity and visual appeal. My responsibilities involved redesigning some of its aspects and improving the user
+                                    interface to create a more engaging experience to ITSector. </p>
+                                <p>This was the opportunity to further improve my knowledge going towards my second year of University.</p>
+                            </div>
+                            <div className='flex flex-col w-full '>
+                                <p className='font-bold mt-2'>Technologies</p>
+                                <div className='grid grid-cols-8 2xl:grid-cols-9 w-full h-9  p-0.5 gap-2 mt-2'>
                                     {secondExperience.map((skill, index) => (
                                         <SmallSkillBox
                                             key={index}
@@ -219,13 +234,19 @@ const Experience = ({ isDarkMode }) => {
                     <div className='flex flex-row w-1/2 h-fit '>
                         <div className=' justify-between flex  flex-col p-2'>
                             <div className='flex flex-col'>
-                                <h1 className='text-xl'>Luduscristaltec</h1>
-                                <p>06/09/2021 - Present</p>
+                                <h1 className='text-xl'>Universidade da Maia</h1>
+                                <p>09/2018 - 06/2022</p>
+                                <p className='text-sm italic'>Sudent</p>
                             </div>
-                            <p className='mt-2'> I have acquired and sharpened my ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum vn organization. I am <span className="text-primary font-semibold">trustworthy, creative, and an effective communicator</span>. I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth. </p>
+                            <div className='flex flex-col gap-y-2'>
+                                <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.
+                                    My coursework and projects provided me with extensive experience in <span className="text-primary font-semibold">front-end and back-end web development</span>,
+                                    as well as <span className="text-primary font-semibold">mobile application development.</span></p>
+                                <p className='mt-2'> Key academic Coursework included Operating Systems, Discrete Mathematics, Object-Oriented Programming.  </p>
+                            </div>
                             <div className='flex flex-col  w-full '>
-                                <p className='font-bold'>Technologies</p>
-                                <div className='grid grid-cols-8  w-full  h-9  p-0.5 gap-2'>
+                                <p className='font-bold mt-2'>Technologies</p>
+                                <div className='grid grid-cols-8 2xl:grid-cols-9  w-full  h-9  p-0.5 gap-2 mt-2'>
                                     {firstExperience.map((skill, index) => (
                                         <SmallSkillBox
                                             key={index}
