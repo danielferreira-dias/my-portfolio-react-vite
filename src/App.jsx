@@ -72,7 +72,9 @@ function App() {
       </section>
 
       <section className={`w-full h-fit my-8 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-        <Experience />
+        <Experience
+          isDarkMode={dataFromChild}
+        />
       </section >
 
     </div >
