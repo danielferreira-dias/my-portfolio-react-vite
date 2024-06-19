@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div>
             <h1 className='text-2xl xl:text-4xl '>About</h1>
-            <div className='flex flex-row mt-4'>
+            <div className='flex flex-row mt-10'>
                 <div className="flex mt-3 ">
                     <span className="block w-8 h-1 bg-primary mr-2"></span>
                 </div>

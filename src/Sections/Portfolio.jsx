@@ -5,8 +5,9 @@ const Portfolio = () => {
     const portfolios = [
         {
             name: "Barber Shop",
-            portfolioImg: "github-dark.svg",
-            skills: ["html.svg", "css.svg", "javascript.svg"]
+            portfolioImg: "barber_shop_layout.png",
+            skills: ["html.svg", "css.svg", "javascript.svg"],
+            stateCompleted: false
         },
     ];
 
@@ -31,7 +32,8 @@ const Portfolio = () => {
                         <PortfolioBox
                             key={index}
                             portfolioImg={portfolio.portfolioImg}
-                            skillsUsed={portfolio.skills} // Assuming you want to display skills as a comma-separated string
+                            skillsUsed={portfolio.skills}
+                            stateType={portfolio.stateCompleted}
                             isDarkMode={isDark}
                         />
                     ))}
