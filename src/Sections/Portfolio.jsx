@@ -1,11 +1,16 @@
-import '../index.css'
+import React from 'react';
 import PortfolioBox from '../Components/PortfolioBox';
 
 const Portfolio = () => {
+    const portfolios = [
+        {
+            name: "Barber Shop",
+            portfolioImg: "github-dark.svg",
+            skills: ["html.svg", "css.svg", "javascript.svg"]
+        },
+    ];
 
-    const imgPort = 'github-dark.svg'
-    const skillPort = 'github-dark.svg'
-    const isDark = false
+    const isDark = false;
 
     return (
         <div>
@@ -21,16 +26,19 @@ const Portfolio = () => {
                         what each project used.
                     </p>
                 </div>
-                <div className='mt-10'>
-                    <PortfolioBox
-                        portfolioImg={imgPort}
-                        skillName={skillPort}
-                        isDarkMode={isDark}
-                    />
+                <div className='mt-10 grid grid-cols-1 gap-4'>
+                    {portfolios.map((portfolio, index) => (
+                        <PortfolioBox
+                            key={index}
+                            portfolioImg={portfolio.portfolioImg}
+                            skillsUsed={portfolio.skills} // Assuming you want to display skills as a comma-separated string
+                            isDarkMode={isDark}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
     );
 };
 
-export default Portfolio
+export default Portfolio;
