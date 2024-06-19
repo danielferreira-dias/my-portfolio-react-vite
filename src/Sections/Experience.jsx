@@ -77,6 +77,7 @@ const Experience = ({ isDarkMode }) => {
                         <div className='flex flex-col'>
                             <h1 className='text-xl'>Luduscristaltec</h1>
                             <p>06/09/2021 - Present</p>
+                            <p className='text-sm italic'>Game/Front-End Developer</p>
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
@@ -110,8 +111,9 @@ const Experience = ({ isDarkMode }) => {
                     </div>
                     <div className=' justify-between  flex flex-col overflow-hidden p-2'>
                         <div className='flex flex-col'>
-                            <h1 className='text-xl'>Luduscristaltec</h1>
-                            <p>06/09/2021 - Present</p>
+                            <h1 className='text-xl'>ITSector</h1>
+                            <p>06/2019 - 12/2019</p>
+                            <p className='text-sm italic'>Front-End Developer</p>
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">front-end development</span> to improve its
@@ -142,8 +144,9 @@ const Experience = ({ isDarkMode }) => {
                     </div>
                     <div className=' justify-between  flex flex-col overflow-hidden p-2'>
                         <div className='flex flex-col'>
-                            <h1 className='text-xl'>Luduscristaltec</h1>
-                            <p>06/09/2021 - Present</p>
+                            <h1 className='text-xl'>Universidade da Maia</h1>
+                            <p>09/2018 - 06/2022</p>
+                            <p className='text-sm italic'>Sudent</p>
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.

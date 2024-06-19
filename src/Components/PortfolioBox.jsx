@@ -22,7 +22,7 @@ const PortfolioBox = ({ portfolioImg, skillsUsed, stateType, isDarkMode }) => {
             </div>
             <div className={`w-full h-full bg-gray-900 top-0 opacity-70 ${stateType ? 'hidden' : 'absolute '}`}>
                 <div className='w-full h-full text-center flex justify-center items-center'>
-                    <p className='font-bold'>Coming Soon...</p>
+                    <p className='font-bold text-white'>Coming Soon...</p>
                 </div>
             </div>
         </div>
