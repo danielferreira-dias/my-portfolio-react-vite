@@ -63,9 +63,9 @@ const Experience = ({ isDarkMode }) => {
 
 
     return (
-        <div>
+        <div className='mb-10'>
             <div className='px-5 sm:px-10 xl:px-40 2xl:px-64 md:hidden'>
-                <h1 className='text-2xl xl:text-4xl mb-10'>Experience</h1>
+                <h1 className='text-2xl xl:text-4xl mb-12'>Experience</h1>
 
                 <div className='flex flex-row w-full gap-8 h-fit'>
                     <div className="relative w-fit mt-10 md:top-1/2 ">
@@ -168,7 +168,7 @@ const Experience = ({ isDarkMode }) => {
             </div>
 
             <div className='px-5 sm:px-10 xl:px-40 2xl:px-64 h-fit w-full hidden md:block'>
-                <h1 className='text-2xl xl:text-4xl mb-10'>Experience</h1>
+                <h1 className='text-2xl xl:text-4xl mb-12'>Experience</h1>
 
                 <div className='flex flex-row justify-start gap-8'>
                     <div className='flex flex-row w-1/2 h-96 lg:h-80 '>

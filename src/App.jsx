@@ -3,9 +3,11 @@ import Navbar from './Components/Navbar'
 
 import Experience from './Sections/Experience';
 import Skills from './Sections/Skills';
+import About from './Sections/About';
+import Portfolio from './Sections/Portfolio';
+
 import { useInView } from 'react-intersection-observer';
 import React, { useState, useEffect } from 'react';
-import About from './Sections/About';
 
 function App() {
 
@@ -75,6 +77,10 @@ function App() {
         <Experience
           isDarkMode={dataFromChild}
         />
+      </section >
+
+      <section className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <Portfolio></Portfolio>
       </section >
 
     </div >
