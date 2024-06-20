@@ -5,6 +5,7 @@ import Experience from './Sections/Experience';
 import Skills from './Sections/Skills';
 import About from './Sections/About';
 import Portfolio from './Sections/Portfolio';
+import Contact from './Sections/Contact';
 
 import { useInView } from 'react-intersection-observer';
 import React, { useState, useRef, useEffect } from 'react';
@@ -29,6 +30,7 @@ function App() {
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
   const portfolioRef = useRef(null);
+  const contactRef = useRef(null);
 
   // Function to handle scrolling to a section
   const scrollToSection = (sectionRef) => {
@@ -36,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col  py-5 font-montserrat">
+    <div className="flex flex-col pt-2 font-montserrat">
       <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef }}></Navbar>
 
       <section className={`w-full h-screen px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
@@ -46,7 +48,7 @@ function App() {
             <div className='flex flex-col gap-y-4 my-10 xs:my-0'>
               <p className="text-xl sm:text-2xl lg:text-5xl">I'm <span className="text-2xl sm:text-3xl lg:text-6xl text-primary">Daniel Dias</span></p>
               <p className="text-lg sm:text-xl lg:text-3xl">Full Stack Web Developer</p>
-              <button className='w-40 text-sm sm:text-xl border-4 rounded border-primary text-primary p-2'>Contact Me</button>
+              <button className='w-40 text-sm sm:text-xl border-4 rounded border-primary text-primary p-2' onClick={() => scrollToSection(contactRef)}>Contact Me</button>
             </div>
 
             {/* Image Div */}
@@ -88,8 +90,8 @@ function App() {
         <Portfolio />
       </section >
 
-      <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-
+      <section ref={contactRef} className={`w-full h-fit mt-5 bg-slate-900  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <Contact />
       </section>
 
     </div >
