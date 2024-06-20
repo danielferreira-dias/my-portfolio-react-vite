@@ -36,7 +36,7 @@ const Skills = ({ isDarkMode }) => {
     return (
         <div>
             <h1 className='text-2xl xl:text-4xl '>Skills</h1>
-            <div className='h-fit mt-8 gap-12 xl:gap-20 grid grid-cols-1 sm:grid-cols-2 3xl:grid-cols-2 justify-center items-start'>
+            <div className='h-fit mt-10 gap-12 xl:gap-20 grid grid-cols-1 sm:grid-cols-2 3xl:grid-cols-2 justify-center items-start'>
 
                 {/* Front-End Skills */}
                 <div className='flex flex-col justify-center text-center w-full  items-center'>
