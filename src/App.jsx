@@ -69,7 +69,7 @@ function App() {
               <p className="text-lg sm:text-xl lg:text-3xl">
                 <AnimatedText text="Full Stack Web Developer" textColored={false} />
               </p>
-              <button className='w-40 text-sm sm:text-xl border-4 rounded border-primary text-primary p-2' onClick={() => scrollToSection(contactRef)}>Contact Me</button>
+              <button className='w-40 text-sm sm:text-xl border-4 mt-10 rounded border-primary text-primary p-2 animate-bounce' onClick={() => scrollToSection(contactRef)}>Contact Me</button>
             </div>
 
             {/* Image Div */}

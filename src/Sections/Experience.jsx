@@ -73,8 +73,10 @@ const Experience = ({ isDarkMode }) => {
 
                 <div className='flex flex-row w-full gap-8 h-fit'>
                     <div className="relative w-fit mt-10 md:top-1/2 ">
-                        <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                        <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                        <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                        </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
                     <div className='justify-between  flex flex-col overflow-hidden p-2'>
@@ -109,8 +111,10 @@ const Experience = ({ isDarkMode }) => {
 
                 <div className='flex flex-row w-full gap-8 h-fit'>
                     <div className="relative w-fit ">
-                        <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                        <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                        <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                        </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
                     <div className=' justify-between  flex flex-col overflow-hidden p-2'>
@@ -142,8 +146,10 @@ const Experience = ({ isDarkMode }) => {
 
                 <div className='flex flex-row w-full gap-8 h-fit'>
                     <div className="relative w-fit xs:h-96 sm:h-80">
-                        <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                        <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                        <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                        </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
                     <div className=' justify-between  flex flex-col overflow-hidden p-2'>
@@ -208,8 +214,10 @@ const Experience = ({ isDarkMode }) => {
                             </div>
                         </div>
                         <div className="relative w-fit ">
-                            <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                            <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                            <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                            </span>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
                     </div>
@@ -218,8 +226,10 @@ const Experience = ({ isDarkMode }) => {
                 <div className='flex flex-row justify-end gap-8'>
                     <div className='flex flex-row w-1/2  h-96 lg:h-80 '>
                         <div className="relative w-fit ">
-                            <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                            <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                            <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                            </span>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
                         <div className=' justify-between  flex flex-col p-2 ml-5'>
@@ -280,8 +290,10 @@ const Experience = ({ isDarkMode }) => {
                             </div>
                         </div>
                         <div className="relative w-fit h-96 lg:h-80">
-                            <div className="absolute w-4 h-4 border-2 -top-1 -left-2 border-blue-950 rounded-full animate-scaleAndFade"></div>
-                            <div className="absolute left-1/2 transform top-0 -translate-x-1/2 w-2 h-2 bg-blue-950 rounded-full"></div>
+                            <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
+                            </span>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
                     </div>
