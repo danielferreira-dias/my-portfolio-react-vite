@@ -75,7 +75,7 @@ function App() {
             {/* Image Div */}
             <div className="relative w-56 xs:flex xs:w-60 md:w-72 lg:w-80 xl:w-96 xs:ml-5">
               <div className={` w-1/2 h-full absolute z-10 opacity-80 ${dataFromChild ? ' bg-gradient-to-r from-gray-950 to-transparent' : ' bg-gradient-to-r from-gray-100 to-transparent'}`} ></div>
-              <img src="profile.jpg" alt="Profile" className=" rounded" />
+              <img src="profile.jpg" alt="Profile" className=" rounded" data-aos="fade-left" />
             </div>
           </div>
 
