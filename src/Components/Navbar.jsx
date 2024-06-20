@@ -95,9 +95,9 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                 </div>
             ) : (
                 <div className="hidden xs:flex xs:flex-grow justify-center lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl 2xl:text-4xl">
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('skillsRef')}>Skills</a>
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('experienceRef')}>Experience</a>
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('portfolioRef')}>Portfolio</a>
+                    <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('skillsRef')}>Skills</a>
+                    <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('experienceRef')}>Experience</a>
+                    <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('portfolioRef')}>Portfolio</a>
                 </div>
             )}
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
