@@ -7,7 +7,7 @@ import About from './Sections/About';
 import Portfolio from './Sections/Portfolio';
 
 import { useInView } from 'react-intersection-observer';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 function App() {
 
@@ -16,11 +16,8 @@ function App() {
   const [linkedinMode, setLinkedinMode] = useState('linkedin-light.svg');; // Dark theme SVG Linkedin
   const linkedinDark = 'linkedin-dark.svg'
 
-
   const [gitHubMode, setGitHubMode] = useState('github-light.svg'); // Dark theme SVG Gitub
   const githubDark = 'github-dark.svg'
-
-
 
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
@@ -28,9 +25,19 @@ function App() {
     setGitHubMode(dataFromChild ? githubDark : 'github-light.svg');
   };
 
+  // Define refs for each section
+  const skillsRef = useRef(null);
+  const experienceRef = useRef(null);
+  const portfolioRef = useRef(null);
+
+  // Function to handle scrolling to a section
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="flex flex-col  py-5 font-montserrat">
-      <Navbar onDataFromChild={handleDataFromChild}></Navbar>
+      <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef }}></Navbar>
 
       <section className={`w-full h-screen px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <div className="w-full h-full justify-between xs:justify-normal flex flex-col p-5">
@@ -62,25 +69,23 @@ function App() {
       </section>
 
       <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-        <About
-
-        />
+        <About />
       </section>
 
-      <section className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section ref={skillsRef} className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <Skills
           isDarkMode={dataFromChild}
         />
       </section>
 
-      <section className={`w-full h-fit my-8 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section ref={experienceRef} className={`w-full h-fit my-8 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <Experience
           isDarkMode={dataFromChild}
         />
       </section >
 
-      <section className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-        <Portfolio></Portfolio>
+      <section ref={portfolioRef} className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+        <Portfolio />
       </section >
 
     </div >

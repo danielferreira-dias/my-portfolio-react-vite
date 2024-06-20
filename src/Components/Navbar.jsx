@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../index.css'
 
 
-const Navbar = ({ onDataFromChild }) => {
+const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
 
     // Dark Theme 
     const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -40,6 +40,10 @@ const Navbar = ({ onDataFromChild }) => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleClick = (section) => {
+        scrollToSection(refs[section]);
+    };
+
     return (
         <div className="h-20 w-full px-5 sm:px-10 xl:px-40 2xl:px-64 flex justify-center 2xs:justify-between sm:justify-center items-center font-sans">
             <div className="sm:flex-grow hidden 2xs:flex">
@@ -71,16 +75,16 @@ const Navbar = ({ onDataFromChild }) => {
                             <div className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white transition-all   ${isMenuOpen ? 'transition-opacity ease-in-out duration-300 opacity-100' : 'transition-opacity ease-in-out duration-300 opacity-0'}`}>
                                 <div className="gap-y-5" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 xs:h-16 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem">About</a>
+                                        <span className="w-7 h-1 bg-primary"></span>
+                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('skillsRef')}>Skills</a>
                                     </div>
                                     <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 xs:h-16 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem">Portfolio</a>
+                                        <span className="w-7 h-1 bg-primary"></span>
+                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('experienceRef')}>Experience</a>
                                     </div>
                                     <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 xs:h-16 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem">Contact</a>
+                                        <span className="w-7 h-1 bg-primary"></span>
+                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('portfolioRef')}>Portfolio</a>
                                     </div>
 
 
@@ -91,9 +95,9 @@ const Navbar = ({ onDataFromChild }) => {
                 </div>
             ) : (
                 <div className="hidden xs:flex xs:flex-grow justify-center lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl 2xl:text-4xl">
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>About</a>
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Portfolio</a>
-                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`}>Contact</a>
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('skillsRef')}>Skills</a>
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('experienceRef')}>Experience</a>
+                    <a href="#" className={`mx-2 text-gray-300 ${isDarkTheme ? 'hover:text-black' : 'hover:text-white'}`} onClick={() => handleClick('portfolioRef')}>Portfolio</a>
                 </div>
             )}
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
