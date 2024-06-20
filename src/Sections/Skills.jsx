@@ -31,6 +31,7 @@ const Skills = ({ isDarkMode }) => {
         { skillName: "Postman", iconSrc: "postman.svg" },
         { skillName: "Slack", iconSrc: "slack.svg" },
         { skillName: "Jenkins", iconSrc: "jenkins.svg" },
+        { skillName: "Docker", iconSrc: "docker.svg" },
     ];
 
     return (

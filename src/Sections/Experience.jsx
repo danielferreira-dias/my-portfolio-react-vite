@@ -15,6 +15,8 @@ const Experience = ({ isDarkMode }) => {
         { skillName: "MongoDB", iconSrc: "mongodb.svg" },
         { skillName: "Firebase", iconSrc: "firebase.svg" },
         { skillName: "Postman", iconSrc: "postman.svg" },
+        { skillName: "NodeJS", iconSrc: "node.svg" },
+        { skillName: "Docker", iconSrc: "docker.svg" },
     ];
 
     const firstExperience_dark = [
@@ -29,6 +31,8 @@ const Experience = ({ isDarkMode }) => {
         { skillName: "MongoDB", iconSrc: "mongodb.svg" },
         { skillName: "Firebase", iconSrc: "firebase.svg" },
         { skillName: "Postman", iconSrc: "postman.svg" },
+        { skillName: "NodeJS", iconSrc: "node.svg" },
+        { skillName: "Docker", iconSrc: "docker.svg" },
     ];
 
     const secondExperience_light = [

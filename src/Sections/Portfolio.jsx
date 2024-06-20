@@ -5,12 +5,14 @@ const Portfolio = () => {
 
     const academicPortfolios = [
         {
-            name: "Academic Project 1",
-            description: "Description",
+            name: "Car Dealership System Management",
+            description: "System Management for a Car Dealership connected to clients, supplier and the brand. ",
             link: "https://github.com/ProgramacaoWebGrupo1/M2?tab=readme-ov-file",
             portfolioImg: "car_dealership.png",
-            skills: ["html.svg", "css.svg", "javascript.svg"],
-            stateCompleted: true
+            skills: ["html.svg", "css.svg", "javascript.svg", "react.svg", "node.svg", "docker.svg"],
+            stateCompleted: true,
+            notLive: false,
+            liveLink: null,
         },
         // Add more academic projects
     ];
@@ -22,7 +24,9 @@ const Portfolio = () => {
             link: "https://github.com/ProgramacaoWebGrupo1/M2?tab=readme-ov-file",
             portfolioImg: "barber_shop_layout.png",
             skills: ["html.svg", "css.svg", "javascript.svg"],
-            stateCompleted: false
+            stateCompleted: false,
+            notLive: true,
+            liveLink: null
         },
         // Add more real-life projects
     ];
@@ -56,6 +60,8 @@ const Portfolio = () => {
                                 portfolioImg={portfolio.portfolioImg}
                                 skillsUsed={portfolio.skills}
                                 stateType={portfolio.stateCompleted}
+                                liveState={portfolio.liveState}
+                                urlLive={portfolio.liveLink}
                                 isDarkMode={isDark}
                             />
                         ))}
@@ -74,6 +80,8 @@ const Portfolio = () => {
                                 portfolioImg={portfolio.portfolioImg}
                                 skillsUsed={portfolio.skills}
                                 stateType={portfolio.stateCompleted}
+                                liveState={portfolio.liveState}
+                                urlLive={portfolio.liveLink}
                                 isDarkMode={isDark}
                             />
                         ))}
