@@ -45,7 +45,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
     };
 
     return (
-        <div className="h-20 w-full px-5 sm:px-10 xl:px-40 2xl:px-64 flex justify-center 2xs:justify-between sm:justify-center items-center font-sans">
+        <div className="h-20 w-full px-5 sm:px-10 xl:px-40 2xl:px-64 flex justify-center 2xs:justify-between sm:justify-center items-center font-sans z-10">
             <div className="sm:flex-grow hidden 2xs:flex">
                 <img src="react.svg" alt="" className="w-10 h-auto 2xl:w-14" />
             </div>

@@ -79,7 +79,7 @@ const Experience = ({ isDarkMode }) => {
                         </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className='justify-between  flex flex-col overflow-hidden p-2'>
+                    <div className='justify-between  flex flex-col overflow-hidden p-2' data-aos="fade-up" data-aos-duration="1000">
                         <div className='flex flex-col'>
                             <h1 className='text-xl'>Luduscristaltec</h1>
                             <p>06/09/2021 - Present</p>
@@ -117,7 +117,7 @@ const Experience = ({ isDarkMode }) => {
                         </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className=' justify-between  flex flex-col overflow-hidden p-2'>
+                    <div className=' justify-between  flex flex-col overflow-hidden p-2' data-aos="fade-up" data-aos-duration="1000">
                         <div className='flex flex-col'>
                             <h1 className='text-xl'>ITSector</h1>
                             <p>06/2019 - 12/2019</p>
@@ -152,7 +152,7 @@ const Experience = ({ isDarkMode }) => {
                         </span>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                     </div>
-                    <div className=' justify-between  flex flex-col overflow-hidden p-2'>
+                    <div className=' justify-between  flex flex-col overflow-hidden p-2' data-aos="fade-up" data-aos-duration="1000">
                         <div className='flex flex-col'>
                             <h1 className='text-xl'>Universidade da Maia</h1>
                             <p>09/2018 - 06/2022</p>
@@ -184,7 +184,7 @@ const Experience = ({ isDarkMode }) => {
 
                 <div className='flex flex-row justify-start gap-8'>
                     <div className='flex flex-row w-1/2 h-96 lg:h-80 '>
-                        <div className=' justify-between  flex  flex-col p-2'>
+                        <div className=' justify-between  flex  flex-col p-2' data-aos="fade-up" data-aos-duration="1000">
                             <div className='flex flex-col'>
                                 <h1 className='text-xl'>Luduscristaltec</h1>
                                 <p>06/09/2021 - Present</p>
@@ -232,7 +232,7 @@ const Experience = ({ isDarkMode }) => {
                             </span>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
-                        <div className=' justify-between  flex flex-col p-2 ml-5'>
+                        <div className=' justify-between  flex flex-col p-2 ml-5' data-aos="fade-up" data-aos-duration="1000">
                             <div className='flex flex-col'>
                                 <h1 className='text-xl'>ITSector</h1>
                                 <p>06/2019 - 12/2019</p>
@@ -263,7 +263,7 @@ const Experience = ({ isDarkMode }) => {
 
                 <div className='flex flex-row justify-start gap-8'>
                     <div className='flex flex-row w-1/2 h-fit '>
-                        <div className=' justify-between flex  flex-col p-2'>
+                        <div className=' justify-between flex  flex-col p-2' data-aos="fade-up" data-aos-duration="1000">
                             <div className='flex flex-col'>
                                 <h1 className='text-xl'>Universidade da Maia</h1>
                                 <p>09/2018 - 06/2022</p>
