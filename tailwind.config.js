@@ -46,9 +46,14 @@ export default {
           '50%': { transform: 'scale(1)', opacity: '0' },
           '100%': { transform: 'scale(1.5)', opacity: '1' },
         },
+        animateLetter: {
+          '0%': { opacity: 0, transform: 'translateY(-20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
       },
       animation: {
         scaleAndFade: 'scaleAndFade 2s infinite',
+        animateLetter: 'animateLetter 0.5s forwards',
       },
     },
   },

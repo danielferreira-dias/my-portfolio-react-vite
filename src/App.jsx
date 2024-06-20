@@ -10,6 +10,22 @@ import Contact from './Sections/Contact';
 import { useInView } from 'react-intersection-observer';
 import React, { useState, useRef, useEffect } from 'react';
 
+const AnimatedText = ({ text, textColored }) => {
+  return (
+    < span className={`${textColored ? ' text-2xl sm:text-3xl lg:text-6xl text-primary ' : ''}`} >
+      {splitTextIntoWordSpans(text)}
+    </span >
+  );
+};
+
+const splitTextIntoWordSpans = (text) => {
+  return text.split(' ').map((word, index) => (
+    <span key={index} className="inline-block animated-word" style={{ animationDelay: `${index * 0.2}s` }}>
+      {word}&nbsp;
+    </span>
+  ));
+};
+
 function App() {
 
   const [dataFromChild, setDataFromChild] = useState(true);
@@ -37,6 +53,7 @@ function App() {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+
   return (
     <div className="flex flex-col pt-2 font-montserrat">
       <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef }}></Navbar>
@@ -46,8 +63,12 @@ function App() {
           {/* Introduction Div */}
           <div className='flex items-center xs:items-starts xs:items-center justify-center xs:justify-between h-fit xs:h-full mx-5 my-5 lg:mx-10 flex-col xs:flex-row'>
             <div className='flex flex-col gap-y-4 my-10 xs:my-0'>
-              <p className="text-xl sm:text-2xl lg:text-5xl">I'm <span className="text-2xl sm:text-3xl lg:text-6xl text-primary">Daniel Dias</span></p>
-              <p className="text-lg sm:text-xl lg:text-3xl">Full Stack Web Developer</p>
+              <p className="text-xl sm:text-2xl lg:text-5xl">
+                <AnimatedText text="I'm" textColored={false} /> <AnimatedText text="Daniel Dias" textColored={true} />
+              </p>
+              <p className="text-lg sm:text-xl lg:text-3xl">
+                <AnimatedText text="Full Stack Web Developer" textColored={false} />
+              </p>
               <button className='w-40 text-sm sm:text-xl border-4 rounded border-primary text-primary p-2' onClick={() => scrollToSection(contactRef)}>Contact Me</button>
             </div>
 
