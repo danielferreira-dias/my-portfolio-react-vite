@@ -1,13 +1,15 @@
 import './App.css'
 import Navbar from './Components/Navbar'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Experience from './Sections/Experience';
 import Skills from './Sections/Skills';
 import About from './Sections/About';
 import Portfolio from './Sections/Portfolio';
 import Contact from './Sections/Contact';
 
-import { useInView } from 'react-intersection-observer';
 import React, { useState, useRef, useEffect } from 'react';
 
 const AnimatedText = ({ text, textColored }) => {
@@ -27,6 +29,12 @@ const splitTextIntoWordSpans = (text) => {
 };
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 300, // Animation duration
+    });
+  }, []);
 
   const [dataFromChild, setDataFromChild] = useState(true);
 
