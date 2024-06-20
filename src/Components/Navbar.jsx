@@ -51,6 +51,12 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
             </div>
             {isSmallScreen ? (
                 <div className="flex flex-row xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
+                    <button
+                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
+                        onClick={toggleDarkTheme}
+                    >
+                        <img src={moonSrc} alt="" className='h-4' />
+                    </button>
                     <a
                         href="/resume.pdf"
                         target="_blank"
@@ -59,12 +65,6 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     >
                         <p>Resume</p>
                     </a>
-                    <button
-                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
-                        onClick={toggleDarkTheme}
-                    >
-                        <img src={moonSrc} alt="" className='h-4' />
-                    </button>
                     <div className="relative inline-block text-left">
                         <button
                             onClick={toggleMenu}
