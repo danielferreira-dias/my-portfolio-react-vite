@@ -54,8 +54,8 @@ function App() {
   // Function to handle data from child component
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
-    setLinkedinMode(data ? 'linkedin-dark.svg' : 'linkedin-light.svg');
-    setGitHubMode(data ? 'github-dark.svg' : 'github-light.svg');
+    setLinkedinMode(data ? 'linkedin-light.svg' : 'linkedin-dark.svg');
+    setGitHubMode(data ? 'github-light.svg' : 'github-dark.svg');
   };
 
   // Define refs for each section

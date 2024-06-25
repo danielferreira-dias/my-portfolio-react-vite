@@ -5,10 +5,10 @@ import React, { useState, useEffect } from 'react';
 const Skills = ({ isDarkMode }) => {
 
     const frontEndSkills = [
-        { skillName: "HTML", iconSrc: "html.svg" },
-        { skillName: "CSS", iconSrc: "css.svg" },
         { skillName: "Javascript", iconSrc: "javascript.svg" },
         { skillName: "React", iconSrc: "react.svg" },
+        { skillName: "CSS", iconSrc: "css.svg" },
+        { skillName: "HTML", iconSrc: "html.svg" },
         { skillName: "Tailwind", iconSrc: "tailwind.svg" },
         { skillName: "Kotlin", iconSrc: "kotlin.svg" },
     ];
@@ -21,6 +21,7 @@ const Skills = ({ isDarkMode }) => {
 
     const dataBaseskills = [
         { skillName: "MySQL", iconSrc: "mysql.svg" },
+        { skillName: "SQL", iconSrc: "sql.svg" },
         { skillName: "MongoDB", iconSrc: "mongodb.svg" },
         { skillName: "Firebase", iconSrc: "firebase.svg" },
     ];
@@ -29,7 +30,6 @@ const Skills = ({ isDarkMode }) => {
         { skillName: "Github", iconSrc: "github-dark.svg" },
         { skillName: "Fork", iconSrc: "fork.svg" },
         { skillName: "Postman", iconSrc: "postman.svg" },
-        { skillName: "Slack", iconSrc: "slack.svg" },
         { skillName: "Jenkins", iconSrc: "jenkins.svg" },
         { skillName: "Docker", iconSrc: "docker.svg" },
     ];
