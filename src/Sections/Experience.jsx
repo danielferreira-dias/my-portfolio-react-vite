@@ -87,13 +87,14 @@ const Experience = ({ isDarkMode }) => {
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
-                                Further more, I also developed an extensive "info" section. This section serves as a guide to the many features of the
-                                game to better understanding of the user. Utilizing <span className="text-primary font-semibold">front-end technologies</span>, I integrated frontend frameworks such as React.js.
-                                This integration was important in creating an intuitive, user-friendly interface.
+                                Further more, I also developed an extensive "info" section, implementing a system to recieve JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
+                                game to better understanding of the user.
                             </p>
                             <p>I also specialize in <span className="text-primary font-semibold"> developing casino slot games for both mobile and laptop platforms </span> using the
-                                company proprietary language, which is rooted in C.</p>
-                        </div>                        <div className='flex flex-col w-full h-fit '>
+                                company proprietary language, which is rooted in C.
+                            </p>
+                        </div>
+                        <div className='flex flex-col w-full h-fit '>
                             <p className='font-bold mt-2'>Technologies</p>
                             <div className='flex flex-row flex-wrap w-full h-9  p-0.5 gap-2 mt-2'>
                                 {thirdExperience.map((skill, index) => (
@@ -124,7 +125,7 @@ const Experience = ({ isDarkMode }) => {
                             <p className='text-sm italic'>Front-End Developer</p>
                         </div>
                         <div className='flex flex-col gap-y-2'>
-                            <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">front-end development</span> to improve its
+                            <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">Front-End Development</span> to improve its
                                 interactivity and visual appeal. My responsibilities involved redesigning some of its aspects and improving the user
                                 interface to create a more engaging experience to ITSector. </p>
                             <p>This was the opportunity to further improve my knowledge going towards my second year of University.</p>
@@ -160,7 +161,7 @@ const Experience = ({ isDarkMode }) => {
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.
-                                My coursework and projects provided me with extensive experience in <span className="text-primary font-semibold">front-end and back-end web development</span>,
+                                My coursework and projects provided me with extensive experience in <span className="text-primary font-semibold">Front-End and Back-End Web Development</span>,
                                 as well as <span className="text-primary font-semibold">mobile application development.</span></p>
                             <p className='mt-2'> Key academic Coursework included Operating Systems, Discrete Mathematics, Object-Oriented Programming.  </p>
                         </div>                        <div className='flex flex-col w-full h-fit'>
@@ -192,9 +193,8 @@ const Experience = ({ isDarkMode }) => {
                             </div>
                             <div className='flex flex-col gap-y-2'>
                                 <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
-                                    Further more, I also developed an extensive "info" section. This section serves as a guide to the many features of the
-                                    game to better understanding of the user. Utilizing <span className="text-primary font-semibold">front-end technologies</span>, I integrated frontend frameworks such as React.js.
-                                    This integration was important in creating an intuitive, user-friendly interface.
+                                    Further more, I also developed an extensive "info" section, implementing a system to recieve JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
+                                    game to better understanding of the user.
                                 </p>
                                 <p>I also specialize in <span className="text-primary font-semibold"> developing casino slot games for both mobile and laptop platforms </span> using the
                                     company proprietary language, which is rooted in C.</p>
@@ -239,7 +239,7 @@ const Experience = ({ isDarkMode }) => {
                                 <p className='text-sm italic'>Front-End Developer</p>
                             </div>
                             <div className='flex flex-col gap-y-2'>
-                                <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">front-end development</span> to improve its
+                                <p className='mt-2'> I took on the role of developing the company internal website, focusing on <span className="text-primary font-semibold">Front-End Development</span> to improve its
                                     interactivity and visual appeal. My responsibilities involved redesigning some of its aspects and improving the user
                                     interface to create a more engaging experience to ITSector. </p>
                                 <p>This was the opportunity to further improve my knowledge going towards my second year of University.</p>
@@ -271,7 +271,7 @@ const Experience = ({ isDarkMode }) => {
                             </div>
                             <div className='flex flex-col gap-y-2'>
                                 <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.
-                                    My coursework and projects provided me with extensive experience in <span className="text-primary font-semibold">front-end and back-end web development</span>,
+                                    My coursework and projects provided me with extensive experience in <span className="text-primary font-semibold">Front-End and Back-End Web Development</span>,
                                     as well as <span className="text-primary font-semibold">mobile application development.</span></p>
                                 <p className='mt-2'> Key academic Coursework included Operating Systems, Discrete Mathematics, Object-Oriented Programming.  </p>
                             </div>

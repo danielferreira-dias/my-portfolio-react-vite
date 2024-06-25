@@ -15,7 +15,7 @@ const About = () => {
                         However, I am now looking to transition into the another area which is <span className="text-primary font-semibold">Full Stack Web Development or Artificial Intelligence</span>.
                     </p>
                     <p className="text-lg lg:text-xl xl:text-2xl leading-relaxed text-left" >
-                        Regarding <span className="text-primary font-semibold"> Web Development </span>, I have already gained some experience in this area, working on various projects that have allowed me to apply my skills.
+                        Regarding <span className="text-primary font-semibold"> Web Development </span>, I have already gained some experience in this area, working on various projects academically wise.
                         I am currently committed to expanding my knowledge in Full Stack Development, continuously learning and staying up-to-date with the latest trends and best practices.
                     </p>
                     <p className="text-lg lg:text-xl xl:text-2xl leading-relaxed text-left">

@@ -8,7 +8,7 @@ body, html {
   }
   
   .loader {
-    @apply w-32 h-5 rounded-full relative border-2;
+    @apply w-32 h-5 2xl:w-64 2xl:h-10 rounded-full relative border-2;
     border-color: #514b82;
     color: #514b82;
   }

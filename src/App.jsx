@@ -79,7 +79,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col pt-2 font-montserrat border-2 border-blue-200">
+    <div className="flex flex-col pt-2 font-montserrat border-2 border-blue-200 transition duration-300 ease-in">
       <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef }}></Navbar>
 
       <section className={`w-full h-screen px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
