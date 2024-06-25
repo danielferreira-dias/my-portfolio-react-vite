@@ -9,6 +9,7 @@ import Skills from './Sections/Skills';
 import About from './Sections/About';
 import Portfolio from './Sections/Portfolio';
 import Contact from './Sections/Contact';
+import Loading from './Sections/Loading';
 
 import React, { useState, useRef, useEffect } from 'react';
 
@@ -30,24 +31,31 @@ const splitTextIntoWordSpans = (text) => {
 
 function App() {
 
+  // States for loading, dark mode, and social media icons
+  const [isLoading, setIsLoading] = useState(true);
+  const [dataFromChild, setDataFromChild] = useState(true);
+  const [linkedinMode, setLinkedinMode] = useState('linkedin-light.svg');
+  const [gitHubMode, setGitHubMode] = useState('github-light.svg');
+
+  // Initialize AOS animations
   useEffect(() => {
-    AOS.init({
-      duration: 300, // Animation duration
-    });
+    AOS.init({ duration: 300 });
   }, []);
 
-  const [dataFromChild, setDataFromChild] = useState(true);
+  // Simulate loading delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // 3 seconds delay
 
-  const [linkedinMode, setLinkedinMode] = useState('linkedin-light.svg');; // Dark theme SVG Linkedin
-  const linkedinDark = 'linkedin-dark.svg'
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
 
-  const [gitHubMode, setGitHubMode] = useState('github-light.svg'); // Dark theme SVG Gitub
-  const githubDark = 'github-dark.svg'
-
+  // Function to handle data from child component
   const handleDataFromChild = (data) => {
     setDataFromChild(data);
-    setLinkedinMode(dataFromChild ? linkedinDark : 'linkedin-light.svg');
-    setGitHubMode(dataFromChild ? githubDark : 'github-light.svg');
+    setLinkedinMode(data ? 'linkedin-dark.svg' : 'linkedin-light.svg');
+    setGitHubMode(data ? 'github-dark.svg' : 'github-light.svg');
   };
 
   // Define refs for each section
@@ -61,9 +69,17 @@ function App() {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Conditional rendering based on loading state
+  if (isLoading) {
+    return (
+      <div className="w-full h-svh overflow-hidden p-0 m-0">
+        <Loading />;
+      </div>
+    );
+  }
 
   return (
-    <div className="flex flex-col pt-2 font-montserrat">
+    <div className="flex flex-col pt-2 font-montserrat border-2 border-blue-200">
       <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef }}></Navbar>
 
       <section className={`w-full h-screen px-5 sm:px-10 xl:px-40 2xl:px-64  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>

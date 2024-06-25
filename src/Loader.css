@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes l6 {
+    100% { inset: 0; }
+  }
+  
+  .loader {
+    @apply w-32 h-5 rounded-full relative border-2;
+    border-color: #514b82;
+    color: #514b82;
+  }
+  
+  .loader::before {
+    content: "";
+    @apply absolute rounded-full bg-current;
+    inset: 0 100% 0 0;
+    margin: 2px;
+    animation: l6 2s infinite;
+  }

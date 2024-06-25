@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-950 border-2 border-blue-200;
+    @apply bg-gray-950;
   }
 }
 
@@ -16,4 +16,3 @@
   background-color:  rgb(249 250 251); /* Dark background color */
   border-color: #89CFF0;
 }
-
