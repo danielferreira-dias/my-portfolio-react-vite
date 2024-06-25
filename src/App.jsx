@@ -119,8 +119,10 @@ function App() {
         <Portfolio />
       </section >
 
-      <section ref={contactRef} className={`w-full h-fit mt-5 bg-slate-900  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
-        <Contact />
+      <section ref={contactRef} className={`w-full h-fit mt-5   ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white bg-slate-900' : ' transition-colors duration-300 ease-in-out text-black bg-gray-200'}`}>
+        <Contact
+          isDarkMode={dataFromChild}
+        />
       </section>
 
     </div >

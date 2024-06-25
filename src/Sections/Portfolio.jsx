@@ -36,13 +36,13 @@ const Portfolio = () => {
     return (
         <div>
             <h1 className='text-2xl xl:text-4xl'>Portfolio</h1>
-            <div className='mt-10'>
-                <p>
+            <div className='mt-10' >
+                <p data-aos="fade-up">
                     Welcome to my portfolio, showcasing a collection of websites I've built from the ground up.
                     Each project reflects my dedication to utilizing diverse technologies and my commitment to creating user-friendly interfaces.
                     Explore the innovative solutions and unique designs that demonstrate my passion for web development and my attention to detail.
                 </p>
-                <p className='mt-4'>
+                <p className='mt-4' data-aos="fade-up">
                     My portfolio is divided into two sections: Academic Projects and Real-Life Projects.
                     Academic projects highlight my work during my educational journey, focusing on learning and experimentation.
                     Real-life projects demonstrate my professional experience and practical applications of my skills in real-world scenarios.

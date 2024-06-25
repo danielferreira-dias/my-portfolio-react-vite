@@ -1,6 +1,6 @@
 import '../index.css'
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
     return (
         <div className='flex flex-col w-full h-fit justify-center items-center gap-y-6 text-xs sm:text-sm md:text-lg py-5'>
             <div className='flex flex-row justify-center h-fit items-center gap-x-4'>
@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-row justify-center h-fit items-center gap-x-4'>
                     <img src="linkedin-light.svg" alt="LinkedIn" className="w-4 h-auto 2xl:w-8" />
-                    <a href="https://www.linkedin.com/in/daniel-dias-ismai/" className='w-fit text-blue-600'>Linkedin Link</a>
+                    <a href="https://www.linkedin.com/in/daniel-dias-ismai/" className='w-fit text-blue-600'>Linkedin</a>
                 </div>
 
             </div>
