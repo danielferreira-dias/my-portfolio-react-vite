@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
@@ -13,7 +15,12 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
         setIsDarkTheme(!isDarkTheme);
         document.body.classList.toggle('dark-theme');
         setMoonSrc(isDarkTheme ? 'moon.svg' : sunSrc);
-        onDataFromChild(isDarkTheme)
+        onDataFromChild(isDarkTheme);
+
+        // Reinitialize AOS to respect data-aos-once="true"
+        setTimeout(() => {
+            AOS.refresh(); // Use AOS.refresh() to reinitialize the animations
+        }, 0); // Slight delay to ensure the DOM updates are completed before reinitializing
     }
 
     // Add transition class to body after initial load
@@ -52,10 +59,12 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
             {isSmallScreen ? (
                 <div className="flex flex-row xs:flex-grow justify-end lg:mr-10 space-x-4 lg:space-x-10 text-lg sm:text-2xl">
                     <button
-                        className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
+                        className={`relative flex items-center justify-between w-16 h-9 p-1 border rounded-full cursor-pointer transition-colors duration-300 ease-in-out ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 shadow-blue-900 hover:shadow-blue-700' : 'bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700'}`}
                         onClick={toggleDarkTheme}
                     >
-                        <img src={moonSrc} alt="" className='h-4' />
+                        <div className={`w-8 h-8 rounded-full shadow-md transform transition-transform duration-300 ease-in-out flex justify-center ${isDarkTheme ? 'translate-x-6 bg-gradient-to-r from-white to-gray-300' : '-translate-x-0.5 bg-blue-900 shadow-blue-900'}`}>
+                            <img src={moonSrc} alt="" className='h-4 w-4 m-auto' />
+                        </div>
                     </button>
                     <a
                         href="/resume.pdf"
@@ -100,11 +109,14 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('portfolioRef')}>Portfolio</a>
                 </div>
             )}
-            <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-2 ml-10">
-                <button className={` px-4 py-2 rounded w-fit h-12  flex items-center justify-center border border-gray-300 shadow-sm 
-    ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-200 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}
-                    onClick={toggleDarkTheme}>
-                    <img src={moonSrc} alt="" className='h-7' />
+            <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-3 ml-10">
+                <button
+                    className={`relative flex items-center justify-between w-20 h-12 p-1 border rounded-full cursor-pointer transition-colors duration-300 ease-in-out ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 shadow-blue-900 hover:shadow-blue-700' : 'bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700'}`}
+                    onClick={toggleDarkTheme}
+                >
+                    <div className={`flex justify-center w-10 h-10 rounded-full shadow-md transform transition-transform duration-300 ease-in-out ${isDarkTheme ? 'translate-x-8 bg-gradient-to-r from-white to-gray-300' : '-translate-x-0.5 bg-blue-900 shadow-blue-900'}`}>
+                        <img src={moonSrc} alt="" className='h-7 w-7 m-auto' />
+                    </div>
                 </button>
                 <a
                     href="/resume.pdf"
