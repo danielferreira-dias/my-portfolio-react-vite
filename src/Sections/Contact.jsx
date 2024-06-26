@@ -1,4 +1,6 @@
 import '../index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = ({ isDarkMode }) => {
     return (
@@ -12,13 +14,13 @@ const Contact = ({ isDarkMode }) => {
                         I'm actively seeking a new opportunity to apply my skills and continue growing!</p>
                     <button className='w-40 text-sm sm:text-xl sm:w-60 border-4 mt-10 rounded border-primary text-primary p-2 animate-bounce'>Contact Me Below</button>
                     <div className={`flex flex-row justify-center gap-x-8 items-center w-60 h-28 rounded-md border-primary border-2 mt-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-300'}`}>
-                        <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">
                             <img src={isDarkMode ? "linkedin-light.svg" : "linkedin-dark.svg"} alt="LinkedIn" className="w-4 h-4" />
                         </a>
-                        <a href="https://github.com/danielferreira-dias" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/danielferreira-dias" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">
                             <img src={isDarkMode ? "github-light.svg" : "github-dark.svg"} alt="GitHub" className="w-6 h-6" />
                         </a>
-                        <a href="mailto:danieldias.it98@gmail.com">
+                        <a href="mailto:danieldias.it98@gmail.com" data-aos="zoom-in" data-aos-duration="1000">
                             <img src={isDarkMode ? "email-light.svg" : "email-dark.svg"} alt="Email" className="w-5 h-5" />
                         </a>
                     </div>
