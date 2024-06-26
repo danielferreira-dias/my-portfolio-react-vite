@@ -40,15 +40,18 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
         return () => window.removeEventListener('resize', checkScreenSize);
     }, []);
 
-    // Open Menu Variables
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
     const handleClick = (section) => {
         scrollToSection(refs[section]);
+    };
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeDropdown = () => {
+        setIsOpen(false);
     };
 
     return (
@@ -74,30 +77,22 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     >
                         <p>Resume</p>
                     </a>
-                    <div className="relative inline-block text-left">
-                        <button
-                            onClick={toggleMenu}
-                            className={` flex items-center justify-center px-4 py-2 border ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 transition-colors duration-300 ease-in-out' : 'transition-colors bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700 duration-300 ease-in-out'}`}                        >
-                            <img src="menu.52609857.svg" alt="Menu" />
+                    <div className="relative inline-block">
+                        {/* Dropdown toggle button */}
+                        <button onClick={toggleDropdown} className={`relative z-10 block p-2 text-gray-700 border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-opacity-40 dark:focus:ring-blue-400 focus:ring dark:focus:border-blue-500 focus:outline-none ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 text-black transition-colors duration-300 ease-in-out text-gray-800 dark:text-white' : 'bg-gray-800 text-white dark:text-white'}`}>
+                            <svg className={`w-5 h-5 ${isDarkTheme ? 'text-gray-800 dark:text-black' : 'text-white'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
                         </button>
-                        {isMenuOpen && (
-                            <div className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white transition-all   ${isMenuOpen ? 'transition-opacity ease-in-out duration-300 opacity-100' : 'transition-opacity ease-in-out duration-300 opacity-0'}`}>
-                                <div className="gap-y-5" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                    <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('skillsRef')}>Skills</a>
-                                    </div>
-                                    <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('experienceRef')}>Experience</a>
-                                    </div>
-                                    <div className='flex flex-row items-center px-5'>
-                                        <span className="w-7 h-1 bg-primary"></span>
-                                        <a href="#" className="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100" role="menuitem" onClick={() => handleClick('portfolioRef')}>Portfolio</a>
-                                    </div>
 
-
-                                </div>
+                        {/* Dropdown menu */}
+                        {isOpen && (
+                            <div onClick={closeDropdown}
+                                className={`absolute right-0 z-20 w-48 py-2 mt-2 origin-top-right rounded-md shadow-xl ${isDarkTheme ? 'bg-white text-black' : 'bg-gray-800 text-gray-300'}`}>
+                                <a href="#" className="block px-4 py-3 text-sm  capitalize transition-colors duration-300 transform  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" onClick={() => handleClick('skillsRef')}>Skills</a>
+                                <a href="#" className="block px-4 py-3 text-sm  capitalize transition-colors duration-300 transform  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" onClick={() => handleClick('experienceRef')}>Experience</a>
+                                <a href="#" className="block px-4 py-3 text-sm  capitalize transition-colors duration-300 transform  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" onClick={() => handleClick('portfolioRef')}>Portfolio</a>
+                                <a href="#" className="block px-4 py-3 text-sm  capitalize transition-colors duration-300 transform  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" onClick={() => handleClick('contactRef')}>Contact</a>
                             </div>
                         )}
                     </div>
@@ -108,7 +103,8 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('experienceRef')}>Experience</a>
                     <a href="#" className={`mx-2  ${isDarkTheme ? ' text-gray-500 hover:text-black' : ' text-gray-300 hover:text-white'}`} onClick={() => handleClick('portfolioRef')}>Portfolio</a>
                 </div>
-            )}
+            )
+            }
             <div className=" hidden sm:flex xs:flex-row items-center justify-end space-x-3 ml-10">
                 <button
                     className={`relative flex items-center justify-between w-20 h-12 p-1 border rounded-full cursor-pointer transition-colors duration-300 ease-in-out ${isDarkTheme ? 'bg-gradient-to-r from-white to-gray-300 shadow-blue-900 hover:shadow-blue-700' : 'bg-gradient-to-r from-black to-blue-900 shadow-blue-900 hover:shadow-blue-700'}`}
@@ -128,7 +124,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     <p>Resume</p>
                 </a>
             </div>
-        </div>
+        </div >
     );
 }
 
