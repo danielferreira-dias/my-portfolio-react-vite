@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
@@ -13,7 +15,12 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
         setIsDarkTheme(!isDarkTheme);
         document.body.classList.toggle('dark-theme');
         setMoonSrc(isDarkTheme ? 'moon.svg' : sunSrc);
-        onDataFromChild(isDarkTheme)
+        onDataFromChild(isDarkTheme);
+
+        // Reinitialize AOS to respect data-aos-once="true"
+        setTimeout(() => {
+            AOS.refresh(); // Use AOS.refresh() to reinitialize the animations
+        }, 0); // Slight delay to ensure the DOM updates are completed before reinitializing
     }
 
     // Add transition class to body after initial load
