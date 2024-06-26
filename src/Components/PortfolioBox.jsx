@@ -10,7 +10,6 @@ const PortfolioBox = ({ workName, workDescription, workGitHub, portfolioImg, ski
                     <h1 className='font-bold'>{workName}</h1>
                     <div className='flex flex-col gap-y-2 text-xs w-full'>
                         <p>{workDescription}</p>
-                        <p>You can check out the github repository!</p>
                         <div className='flex flex-row w-full justify-evenly'>
                             <a href={workGitHub} className="italic">Repository</a>
                             <a href={urlLive} className={`italic ${liveState ? 'relative' : 'hidden'}`}>

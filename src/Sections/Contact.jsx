@@ -3,20 +3,27 @@ import '../index.css'
 const Contact = ({ isDarkMode }) => {
     return (
         <div className='flex flex-col w-full h-fit justify-center items-center gap-y-6 text-xs sm:text-sm md:text-lg py-5'>
-            <div className='flex flex-row justify-center h-fit items-center gap-x-4'>
-                <p className='w-fit'>Page fully developed by myself using React and Vite.</p>
-                <img src="react.svg" alt="React" className="w-6 h-auto 2xl:w-10" />
-            </div>
-            <div className='flex flex-col w-max gap-y-1'>
-                <div className='flex flex-row justify-center h-fit items-center gap-x-2'>
-                    <img src="email-dark.svg" alt="Email" className="w-5 h-auto 2xl:w-10" />
-                    <p className='w-fit'>danieldias.it98@gmail.com</p>
+            <div className='h-fit flex flex-col text-center items-center'>
+                <div className='border-t-2 border-t-blue-200 w-1/2'></div>
+                <div className='flex flex-col gap-y-5 px-5 xs:px-20 lg:px-0 lg:w-1/2 items-center'>
+                    <h1 className='text-2xl xl:text-4xl my-4'>Get in Touch</h1>
+                    <p>I'm eager to join a collaborative team where I can contribute my skills and learn from others.
+                        If you have an exciting project, let's discuss how I can be a valuable asset.
+                        I'm actively seeking a new opportunity to apply my skills and continue growing!</p>
+                    <button className='w-40 text-sm sm:text-xl sm:w-60 border-4 mt-10 rounded border-primary text-primary p-2 animate-bounce'>Contact Me Below</button>
+                    <div className={`flex flex-row justify-center gap-x-8 items-center w-60 h-28 rounded-md border-primary border-2 mt-8 ${isDarkMode ? 'bg-gray-900' : 'bg-gray-300'}`}>
+                        <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer">
+                            <img src={isDarkMode ? "linkedin-light.svg" : "linkedin-dark.svg"} alt="LinkedIn" className="w-4 h-4" />
+                        </a>
+                        <a href="https://github.com/danielferreira-dias" target="_blank" rel="noopener noreferrer">
+                            <img src={isDarkMode ? "github-light.svg" : "github-dark.svg"} alt="GitHub" className="w-6 h-6" />
+                        </a>
+                        <a href="mailto:danieldias.it98@gmail.com">
+                            <img src={isDarkMode ? "email-light.svg" : "email-dark.svg"} alt="Email" className="w-5 h-5" />
+                        </a>
+                    </div>
+                    <p className='w-fit my-10'>Page fully developed by Daniel Dias using React, Tailwind and Data-AOS. Deployed with Vercel. </p>
                 </div>
-                <div className='flex flex-row justify-center h-fit items-center gap-x-4'>
-                    <img src="linkedin-light.svg" alt="LinkedIn" className="w-4 h-auto 2xl:w-8" />
-                    <a href="https://www.linkedin.com/in/daniel-dias-ismai/" className='w-fit text-blue-600'>Linkedin</a>
-                </div>
-
             </div>
         </div>
     );
