@@ -3,20 +3,20 @@ body, html {
     padding: 0;
 }
 
-@keyframes l6 {
-    100% { inset: 0; }
-  }
-  
-  .loader {
-    @apply w-32 h-5 2xl:w-64 2xl:h-10 rounded-full relative border-2;
-    border-color: #514b82;
-    color: #514b82;
-  }
-  
-  .loader::before {
-    content: "";
-    @apply absolute rounded-full bg-current;
-    inset: 0 100% 0 0;
-    margin: 2px;
-    animation: l6 2s infinite;
-  }
+.trailsText {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: rgb(255, 255, 255);
+  font-size: 6em;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trailsText > div {
+  padding-right: 0.05em;
+  overflow: hidden;
+}

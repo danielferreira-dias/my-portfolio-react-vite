@@ -13,5 +13,5 @@
 }
 
 .dark-theme {
-  @apply bg-gradient-to-r from-gray-200 to-sky-50
+  @apply bg-gradient-to-br from-neutral-50 to-slate-100
 }

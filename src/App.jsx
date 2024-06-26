@@ -46,7 +46,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // 3 seconds delay
+    }, 2600); // 3 seconds delay
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
