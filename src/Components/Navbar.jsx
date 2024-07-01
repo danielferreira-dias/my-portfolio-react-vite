@@ -29,7 +29,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     </div>
                     <div className='arimo hidden mdlg:flex flex-row text-2xl lg:text-3xl text-white gap-x-9'>
                         {menuItems.map(item => (
-                            <div key={item.id} className="py-5 text-white  font-semibold hover:transform hover:scale-105 transition-transform">
+                            <div key={item.id} className="py-5 text-white  font-semibold hover:transform hover:scale-105 transition-transform hover:text-custom-gold">
                                 <a href="" className=''>{item.label}</a>
                             </div>
                         ))}
@@ -54,7 +54,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
             <div className={`fixed text-lg lg:text-xl xl:text-2xl mdlg:hidden top-16 xs:top-16 lg:top-20 xl:top-28 2xl:top-32 right-0 h-screen bg-neutral-800 text-white font-semibold shadow-lg p-2 py-0 z-40 w-2/3 xs:w-80 transition ease-in-out delay-150 duration-300 overflow-auto ${menuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
                 <ul className='py-3 arimo text-2xl'>
                     {menuItems.map(item => (
-                        <li key={item.id} className="py-2 border-b-2  border-neutral-900 border-opacity-30 hover:transform hover:scale-105 transition-transform">
+                        <li key={item.id} className="py-2 border-b-2  border-neutral-950 border-opacity-30 hover:transform hover:scale-105 transition-transform hover:text-custom-gold">
                             <a href="#" className="p-4 block">{item.label}</a>
                         </li>
                     ))}

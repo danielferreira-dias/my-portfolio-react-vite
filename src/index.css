@@ -39,3 +39,33 @@
 .fade-in-out {
   animation: fadeInOut 4s infinite;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skill-scroll {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skill-scroll-inner {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Adjust the duration for desired speed */
+}
+
+.skill {
+  padding-right: 2rem; /* Adjust as needed */
+}
+
+.duplicate {
+  display: flex;
+}

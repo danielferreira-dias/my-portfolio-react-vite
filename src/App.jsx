@@ -83,11 +83,11 @@ function App() {
     <div className="flex flex-col pt-2 font-montserrat  transition duration-300 ease-in">
       <Navbar onDataFromChild={handleDataFromChild} scrollToSection={scrollToSection} refs={{ skillsRef, experienceRef, portfolioRef, contactRef }}></Navbar>
 
-      <section className='h-fit md:h-fit w-full px-8 sm:px-12 md:px-6 mdlg:px-14 xl:px-40 2xl:px-52 py-2 my-5 '>
+      <section className='h-fit sm:h-fit w-full px-8 sm:px-12 md:px-6 mdlg:px-14 xl:px-40 2xl:px-52 py-2 my-5 '>
         <Index></Index>
       </section>
 
-      <section className={`w-full h-fit my-5 px-5 sm:px-10 xl:px-40 2xl:px-52  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section className={`w-full h-fit my-5 px-8 sm:px-12 md:px-6 mdlg:px-14 xl:px-40 2xl:px-52  ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <About />
       </section>
 
