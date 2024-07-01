@@ -30,13 +30,12 @@ const splitTextIntoWordSpans = (text) => {
   ));
 };
 
+
 function App() {
 
   // States for loading, dark mode, and social media icons
   const [isLoading, setIsLoading] = useState(true);
   const [dataFromChild, setDataFromChild] = useState(true);
-  const [linkedinMode, setLinkedinMode] = useState('linkedin-light.svg');
-  const [gitHubMode, setGitHubMode] = useState('github-light.svg');
 
   // Initialize AOS animations
   useEffect(() => {
@@ -91,7 +90,7 @@ function App() {
         <About />
       </section>
 
-      <section ref={skillsRef} className={`w-full h-fit my-8 px-5 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section ref={skillsRef} className={`w-full bg-custom-black-sec h-fit my-8 px-2 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <Skills
           isDarkMode={dataFromChild}
         />

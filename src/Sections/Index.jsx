@@ -66,19 +66,23 @@ const Index = () => {
                     </div>
                 </div>
             </div>
+
             <div className='mt-5'>
-                <div className='flex flex-col xs:flex-row xs:flex-wrap mdlg:flex-nowrap xs:justify-center gap-y-5 gap-x-5 text-white'>
-                    <a href="" className='bg-card-color w-full xs:w-80 lg:w-1/3 xl:w-1/3 2xl:w-1/3 flex p-5 text-center items-center justify-evenly rounded-lg'>
-                        <img src="linkedin-light.svg" alt="" className='w-6 mb-2' />
-                        <p className='arimo-sec text-2xl'>Linkedin</p>
+                <div className='flex flex-col items-center xs:flex-row xs:flex-wrap mdlg:flex-nowrap xs:justify-center gap-y-5 gap-x-5 text-white'>
+                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                        <img src="linkedin-light.svg" alt="" className='w-6 2xl:w-8 mb-2' />
+                        <p className='arimo-sec text-2xl 2xl:text-4xl'>Linkedin</p>
                     </a>
-                    <a href="" className='bg-card-color w-full xs:w-80 lg:w-1/3 xl:w-1/3 2xl:w-1/3 flex p-5 text-center items-center justify-evenly rounded-lg'>
-                        <img src="email-light.svg" alt="" className='w-6' />
-                        <p className='arimo-sec text-2xl'>Email</p>
+                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                        <img src="email-light.svg" alt="" className='w-6 2xl:w-8' />
+                        <p className='arimo-sec text-2xl  2xl:text-4xl'>Email</p>
                     </a>
-                    <a href="" className='bg-card-color w-full xs:w-80 lg:w-1/3 xl:w-1/3 2xl:w-1/3 flex p-5 text-center items-center justify-evenly rounded-lg'>
-                        <img src="github-light.svg" alt="" className='w-7' />
-                        <p className='arimo-sec text-2xl'>Github</p>
+                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                        <img src="github-light.svg" alt="" className='w-7 2xl:w-9' />
+                        <p className='arimo-sec text-2xl  2xl:text-4xl'>Github</p>
+                    </a>
+                    <a href="" className='bg-custom-gold w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg opacity-90 border-white border-2'>
+                        <p className='arimo-sec text-2xl 2xl:text-4xl'>Resume</p>
                     </a>
                 </div>
             </div>

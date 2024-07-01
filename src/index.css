@@ -62,9 +62,6 @@
   animation: scroll 30s linear infinite; /* Adjust the duration for desired speed */
 }
 
-.skill {
-  padding-right: 2rem; /* Adjust as needed */
-}
 
 .duplicate {
   display: flex;
