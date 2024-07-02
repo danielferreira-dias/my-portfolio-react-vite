@@ -32,13 +32,14 @@ const Skills = ({ isDarkMode }) => {
     ];
 
     return (
-        <div className=''>
+        <div className='flex flex-col'>
+            <h1 className='mt-10 text-4xl xl:text-6xl arimo text-center'>Skills</h1>
             <div className='h-fit my-10 gap-12 xl:gap-20 grid grid-cols-1 sm:grid-cols-2 3xl:grid-cols-2 justify-center items-start'>
 
                 {/* Front-End Skills */}
                 <div className='flex flex-col justify-center text-center w-full  items-center'>
                     <h1 className='text-2xl xl:text-3xl arimo text-center' >Client Side</h1>
-                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-12 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
+                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-16 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
                         {frontEndSkills.map((skill, index) => (
                             <Skillbox
                                 key={index}
@@ -53,7 +54,7 @@ const Skills = ({ isDarkMode }) => {
                 {/* Back-End Skills */}
                 <div className='flex flex-col justify-center text-center w-full  items-center'>
                     <h1 className='text-2xl xl:text-3xl arimo text-center' >Server Side</h1>
-                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-12 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
+                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-16 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
                         {backEndSkills.map((skill, index) => (
                             <Skillbox
                                 key={index}
@@ -68,7 +69,7 @@ const Skills = ({ isDarkMode }) => {
                 {/* Tools */}
                 <div className='flex flex-col justify-center text-center w-full  items-center'>
                     <h1 className='text-2xl xl:text-3xl arimo text-center'>Development & Operations</h1>
-                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-12 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
+                    <div className="p-4 grid grid-cols-2 gap-x-5 xs:grid-cols-3 sm:grid-cols-2 xs:gap-x-16 xl:gap-x-24 xl:grid-cols-2  w-fit h-max justify-center xs:justify-center">
                         {toolskills.map((skill, index) => (
                             <Skillbox
                                 key={index}

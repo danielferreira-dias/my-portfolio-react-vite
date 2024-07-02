@@ -67,8 +67,8 @@ const Experience = ({ isDarkMode }) => {
 
 
     return (
-        <div className='mb-10'>
-            <h1 className='px-5 sm:px-10 xl:px-40 2xl:px-64 text-2xl xl:text-4xl mb-12'>Experience</h1>
+        <div className=''>
+            <h1 className='mb-20 text-4xl xl:text-6xl arimo text-center'>Experience</h1>
             <div className='px-5 sm:px-10 xl:px-40 2xl:px-64 md:hidden'>
 
                 <div className='flex flex-row w-full gap-8 h-fit'>
