@@ -34,7 +34,7 @@ const About = () => {
 
             <div className="skill-scroll my-20 relative overflow-hidden ">
                 <div className="absolute inset-0 z-10">
-                    <div className="absolute left-0 top-0 w-1/3 h-full bg-gradient-to-r from-custom-black to-transparent"></div>
+                    <div className="absolute -left-2 top-0 w-1/3 h-full bg-gradient-to-r from-custom-black to-transparent"></div>
                     <div className="absolute -right-1 top-0 w-1/3 rotate-180 h-full bg-gradient-to-l from-transparent to-custom-black"></div>
                 </div>
                 <div className="skill-scroll-inner arimo-sec h-16 flex items-center relative">

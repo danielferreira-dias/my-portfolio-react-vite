@@ -90,7 +90,7 @@ function App() {
         <About />
       </section>
 
-      <section ref={skillsRef} className={`w-full bg-custom-black-sec h-fit my-8 px-2 sm:px-10 xl:px-40 2xl:px-64 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
+      <section ref={skillsRef} className={`w-full bg-custom-black-sec h-fit my-8 px-2 sm:px-10 xl:px-40 2xl:px-52 ${dataFromChild ? ' transition-colors duration-300 ease-in-out text-white' : ' transition-colors duration-300 ease-in-out text-black'}`}>
         <Skills
           isDarkMode={dataFromChild}
         />
