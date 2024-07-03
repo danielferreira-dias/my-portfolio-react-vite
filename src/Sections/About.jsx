@@ -11,7 +11,7 @@ const About = () => {
             <h1 className='mb-20 text-4xl xl:text-6xl arimo text-center' data-aos="fade-up" data-aos-duration="1000">About Me</h1>
             <div className='h-full flex flex-row justify-between items-start'>
                 <div className='h-full flex flex-col items-left w-full'>
-                    <div className='flex flex-row arimo'>
+                    <div className='flex flex-row arimo-sec'>
                         <div className='flex flex-col gap-y-2' data-aos="fade-up" data-aos-duration="1000">
                             <p className="text-xl lg:text-2xl xl:text-2xl leading-relaxed text-left">
                                 As a game developer with 3 years of experience, I have increased my skills in creating engaging and innovative digital experiences.

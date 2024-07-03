@@ -46,7 +46,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     <div className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40'>
                         <img src="LOGO.png" alt="" />
                     </div>
-                    <div className='arimo hidden mdlg:flex flex-row text-2xl text-white gap-x-5'>
+                    <div className='arimo hidden mdlg:flex flex-row text-2xl text-white gap-x-2 2xl:gap-x-4'>
                         {menuItems.map(item => (
                             <div key={item.id} onClick={() => handleClick(item.section)} className="py-5 text-white items-center flex flex-row font-semibold hover:transform hover:scale-105 transition-transform hover:text-custom-gold cursor-pointer"
                             >

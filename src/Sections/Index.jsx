@@ -23,10 +23,10 @@ const Index = ({ scrollToSection, refs }) => {
             <div className='bg-card-color rounded-lg py-5 sm:py-10 lg:py-12 xl:py-14 2xl:py-18 sm:px-10 lg:px-12 xl:px-14 2xl:px-18 h-full'>
                 <div className='w-full flex flex-col gap-y-5 sm:flex-row items-center justify-evenly sm:justify-between md:gap-x-5 h-full relative'>
                     {/* <!-- Profile Image for Small Screens --> */}
-                    <div className='flex w-full items-center justify-center sm:hidden '>
-                        <div className='relative h-fit '>
-                            <div className='w-60 h-60 xs:w-72 xs:h-72 border-4 absolute top-2 left-4'></div>
-                            <img src="profile.jpg" alt="Profile" className='w-60 h-60 xs:w-72 xs:h-72 z-10 relative rounded-lg' data-aos="flip-right" data-aos-duration="1000" />
+                    <div className='flex w-full items-center justify-center sm:hidden h-full'>
+                        <div className='relative w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40'>
+                            <div className='w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 border-4 absolute top-2 left-4'></div>
+                            <img src="profile.jpg" alt="Profile" className='w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 z-10 relative rounded-lg' data-aos="flip-right" data-aos-duration="1000" />
                         </div>
                     </div>
 
@@ -45,8 +45,8 @@ const Index = ({ scrollToSection, refs }) => {
                     {/* <!-- Profile Image for Medium and Larger Screens --> */}
                     <div className='sm:flex sm:items-center  sm:justify-center hidden'>
                         <div className='relative h-fit '>
-                            <div className='w-60 h-60 xs:w-72 xs:h-72 md:w-80 md:h-80 xl:w-96 xl:h-96  border-4 absolute top-2 left-4'></div>
-                            <img src="profile.jpg" alt="Profile" className='w-60 h-60 xs:w-72 xs:h-72 md:w-80 md:h-80 xl:w-96 xl:h-96 z-10 relative' data-aos="flip-right" data-aos-duration="1000" />
+                            <div className='w-60 h-60 xs:w-72 xs:h-72 sm:w-60 sm:h-60 md:w-80 md:h-80 xl:w-96 xl:h-96  border-4 absolute top-2 left-4'></div>
+                            <img src="profile.jpg" alt="Profile" className='w-60 h-60 xs:w-72 xs:h-72 sm:w-60 sm:h-60 md:w-80 md:h-80 xl:w-96 xl:h-96 z-10 relative' data-aos="flip-right" data-aos-duration="1000" />
                         </div>
                     </div>
 

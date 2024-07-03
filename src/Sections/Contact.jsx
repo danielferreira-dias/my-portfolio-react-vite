@@ -8,12 +8,12 @@ const Contact = ({ isDarkMode }) => {
             <div className='h-fit flex flex-col text-center items-center '>
                 <div className='border-t-2 border-t-custom-gold w-1/2'></div>
                 <div className='flex flex-col gap-y-5 px-5 xs:px-20 lg:px-0 lg:w-1/2 items-center'>
-                    <h1 className='my-10 text-4xl xl:text-6xl arimo text-center arimo'>Get in Touch</h1>
+                    <h1 className='my-10 text-4xl xl:text-6xl arimo text-center'>Get in Touch</h1>
                     <p>I'm eager to join a collaborative team where I can contribute my skills and learn from others.
                         If you have an exciting project, let's discuss how I can be a valuable asset.
                         I'm actively seeking a new opportunity to apply my skills and continue growing!</p>
-                    <button className='w-40 text-sm sm:text-xl sm:w-60 border-4 mt-10 rounded border-custom-gold text-custom-gold p-2 animate-bounce'>Contact Me Below</button>
-                    <div className={`flex flex-row justify-center gap-x-8 items-center w-60 h-28 rounded-md border-custom-gold border-2 mt-8 bg-custom-black`}>
+                    <button className='w-40 h-20 text-sm sm:text-xl sm:w-60 border-4 mt-10 rounded border-custom-gold  p-2 animate-bounce'>Contact Me Below</button>
+                    <div className={`flex flex-row justify-center gap-x-8 items-center w-60 h-28 rounded-md border-custom-gold border-2 arimo-sec mt-8 bg-custom-black`}>
                         <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">
                             <img src={isDarkMode ? "linkedin-light.svg" : "linkedin-dark.svg"} alt="LinkedIn" className="w-4 h-4" />
                         </a>
