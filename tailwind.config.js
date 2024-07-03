@@ -35,12 +35,16 @@ export default {
 
     },
     extend: {
+      height: {
+        '128': '32rem',
+        '176': '44rem',
+      },
       colors: {
         'primary': '#BFDBFE',
         'card-color': '#1e1e1f',
         'custom-gold': '#96885f',
         'custom-black': '#161616',
-        'custom-black-sec': '#0e0e0e'
+        'custom-black-sec': '#0e0e0e',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
