@@ -65,11 +65,10 @@ function App() {
     );
   }
 
-
-
-
   return (
     <div className="flex flex-col pt-2 font-montserrat transition duration-300 ease-in">
+
+
       <Navbar
         onDataFromChild={handleDataFromChild}
         scrollToSection={scrollToSection}
