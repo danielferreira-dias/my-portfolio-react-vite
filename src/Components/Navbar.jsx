@@ -43,8 +43,8 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
         <>
             <div className='h-18 w-full py-2 px-8 sm:px-12 xl:px-40 2xl:px-52 sticky mdlg:relative bg-custom-black opacity-95 lg:opacity-100 top-0 z-40'>
                 <div className="flex w-full justify-between items-center z-10">
-                    <div className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40'>
-                        <img src="LOGO.png" alt="" className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40' />
+                    <div className='w-28 mdlg:w-36 lgxl:w-40'>
+                        <img src="LOGO.png" alt="" className='w-28 mdlg:w-36 lgxl:w-40' />
                     </div>
                     <div className='arimo hidden mdlg:flex flex-row text-2xl text-white gap-x-2 2xl:gap-x-4'>
                         {menuItems.map(item => (
@@ -56,7 +56,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                             </div>
                         ))}
                     </div>
-                    <div className='mdlg:hidden'>
+                    <div className='h-12 w-fit mdlg:hidden'>
                         <svg ref={svgRef} onClick={toggleMenu} className="h-12 w-fit cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" strokeWidth=".6" fill="rgba(0,0,0,0)" strokeLinecap="round">
                             <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
                                 <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />

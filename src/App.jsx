@@ -66,7 +66,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col pt-2 font-montserrat transition duration-300 ease-in">
+    <div className="flex flex-col pt-2 font-montserrat transition duration-300 ease-in w-full">
 
 
       <Navbar

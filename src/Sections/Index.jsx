@@ -25,8 +25,8 @@ const Index = ({ scrollToSection, refs }) => {
                     {/* <!-- Profile Image for Small Screens --> */}
                     <div className='flex w-full items-center justify-center sm:hidden h-full'>
                         <div className='relative w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40'>
-                            <div className='w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 border-4 absolute top-2 left-4'></div>
-                            <img src="profile.jpg" alt="Profile" className='w-60 h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 z-10 relative rounded-lg' data-aos="flip-right" data-aos-duration="1000" />
+                            <div className='w-52 h-52 2xs:w-60 2xs:h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 border-4 absolute top-2 left-4'></div>
+                            <img src="profile.jpg" alt="Profile" className='w-52 h-52 2xs:w-60 2xs:h-60 xs:w-72 xs:h-72 sm:w-40 sm:h-40 z-10 relative rounded-lg' data-aos="flip-right" data-aos-duration="1000" />
                         </div>
                     </div>
 
