@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-const messages = ["Hello", "Bonjour", "Ola", "Hola", "Hallo", "Ciao"];
+const messages = ["Hello", "Bonjour", "Olá", "Hola", "Ciao"];
 
 const Index = ({ scrollToSection, refs }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
