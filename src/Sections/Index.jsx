@@ -35,7 +35,7 @@ const Index = ({ scrollToSection, refs }) => {
                         <div className=" arimo text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl fade-in-out">
                             {messages[currentIndex]}
                         </div>
-                        <div className='mt-4 flex flex-col'>
+                        <div className='mt-4 flex flex-col ' data-aos="fade-in" data-aos-duration="1000">
                             <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl arimo-sec'>I'm Daniel Dias</p>
                             <p className='text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl arimo-sec text-custom-gold'>Full Stack Developer</p>
                             <button className='w-40 xl:w-60 xl:h-22 text-lg sm:text-xl xl:text-2xl border-4 mt-10 rounded border-white text-white p-2 animate-bounce arimo-sec' onClick={() => handleClick("contactRef")}>Contact Me</button>

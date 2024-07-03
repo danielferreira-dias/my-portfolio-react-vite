@@ -73,7 +73,7 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     </div>
                 </div >
             </div>
-            <div className={`fixed text-lg lg:text-xl xl:text-2xl mdlg:hidden top-16 xs:top-14 lg:top-20 xl:top-28 2xl:top-32 right-0 h-screen bg-neutral-800 text-white font-semibold shadow-lg p-2 py-0 z-40 w-2/3 xs:w-80 transition ease-in-out delay-150 duration-300 overflow-auto ${menuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed text-lg lg:text-xl xl:text-2xl mdlg:hidden top-16 xs:top-14 sm:top-14 md:top-14 lg:top-20 xl:top-28 2xl:top-32 right-0 h-screen bg-neutral-800 text-white font-semibold shadow-lg p-2 py-0 z-30 w-2/3 xs:w-80 transition ease-in-out delay-150 duration-300 overflow-auto ${menuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
                 <ul className='py-3 arimo text-2xl'>
                     {menuItems.map(item => (
                         <li
@@ -84,6 +84,9 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                             <p className="p-4 block">{item.label}</p>
                         </li>
                     ))}
+                    <li onClick={() => handleClick(item.section)} className="py-2  border-opacity-30 hover:transform hover:scale-105 transition-transform hover:text-custom-gold cursor-pointer">
+                        <p className="p-4 block"></p>
+                    </li>
                 </ul>
             </div>
         </>
