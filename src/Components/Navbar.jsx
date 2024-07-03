@@ -42,9 +42,9 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
     return (
         <>
             <div className='h-18 w-full py-2 px-8 sm:px-12 xl:px-40 2xl:px-52 sticky mdlg:relative bg-custom-black opacity-95 lg:opacity-100 top-0 z-40'>
-                <div className="flex justify-between items-center z-10">
+                <div className="flex w-full justify-between items-center z-10">
                     <div className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40'>
-                        <img src="LOGO.png" alt="" />
+                        <img src="LOGO.png" alt="" className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40' />
                     </div>
                     <div className='arimo hidden mdlg:flex flex-row text-2xl text-white gap-x-2 2xl:gap-x-4'>
                         {menuItems.map(item => (
