@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-gray-950 to-gray-900;
+    background-color: #161616;
   }
 }
 
@@ -15,3 +15,69 @@
 .dark-theme {
   @apply bg-gradient-to-br from-neutral-50 to-slate-100
 }
+
+
+.arimo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arimo-sec {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.fade-in-out {
+  animation: fadeInOut 4s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.skill-scroll {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skill-scroll-inner {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Adjust the duration for desired speed */
+}
+
+.skill-scroll-inner-r {
+  display: flex;
+  animation: scroll-right 30s linear infinite; /* Adjust the duration for desired speed */
+}
+
+
+.duplicate {
+  display: flex;
+}
+

@@ -3,90 +3,43 @@ import PortfolioBox from '../Components/PortfolioBox';
 
 const Portfolio = () => {
 
-    const academicPortfolios = [
-        {
-            name: "Car Dealership System Management",
-            description: "System Management for a Car Dealership connected to clients, supplier and the brand. ",
-            link: "https://github.com/ProgramacaoWebGrupo1/M2?tab=readme-ov-file",
-            portfolioImg: "car_dealership.png",
-            skills: ["html.svg", "css.svg", "javascript.svg", "react.svg", "node.svg", "docker.svg"],
-            stateCompleted: true,
-            notLive: false,
-            liveLink: null,
-        },
-        // Add more academic projects
-    ];
 
     const realLifePortfolios = [
         {
             name: "Barber Shop",
             description: "Description",
-            link: "https://github.com/ProgramacaoWebGrupo1/M2?tab=readme-ov-file",
-            portfolioImg: "barber_shop_layout.png",
-            skills: ["html.svg", "css.svg", "javascript.svg"],
+            link: "https://github.com/danielferreira-dias/rikbarber-react-project",
+            portfolioImg: "Screenshot_1.png",
+            skills: ["HTML", "Tailwind", "Typescript", "React"],
             stateCompleted: false,
             notLive: true,
             liveLink: null
         },
+
         // Add more real-life projects
     ];
 
     const isDark = false;
 
     return (
-        <div>
-            <h1 className='text-2xl xl:text-4xl'>Portfolio</h1>
-            <div className='mt-10' >
-                <p data-aos="fade-up">
-                    Welcome to my portfolio, showcasing a collection of websites I've built from the ground up.
-                    Each project reflects my dedication to utilizing diverse technologies and my commitment to creating user-friendly interfaces.
-                    Explore the innovative solutions and unique designs that demonstrate my passion for web development and my attention to detail.
-                </p>
-                <p className='mt-4' data-aos="fade-up">
-                    My portfolio is divided into two sections: Academic Projects and Real-Life Projects.
-                    Academic projects highlight my work during my educational journey, focusing on learning and experimentation.
-                    Real-life projects demonstrate my professional experience and practical applications of my skills in real-world scenarios.
-                </p>
-
-                <div className='mt-10 flex flex-col items-center xs:items-start'>
-                    <h2 className='text-xl xl:text-2xl'>Academic Projects</h2>
-                    <div className='mt-4 grid grid-cols-1 gap-4'>
-                        {academicPortfolios.map((portfolio, index) => (
-                            <PortfolioBox
-                                key={index}
-                                workName={portfolio.name}
-                                workDescription={portfolio.description}
-                                workGitHub={portfolio.link}
-                                portfolioImg={portfolio.portfolioImg}
-                                skillsUsed={portfolio.skills}
-                                stateType={portfolio.stateCompleted}
-                                liveState={portfolio.liveState}
-                                urlLive={portfolio.liveLink}
-                                isDarkMode={isDark}
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                <div className='mt-10 flex flex-col items-center xs:items-start'>
-                    <h2 className='text-xl xl:text-2xl'>Real-Life Projects</h2>
-                    <div className='mt-4 grid grid-cols-1 gap-4'>
-                        {realLifePortfolios.map((portfolio, index) => (
-                            <PortfolioBox
-                                key={index}
-                                workName={portfolio.name}
-                                workDescription={portfolio.description}
-                                workGitHub={portfolio.link}
-                                portfolioImg={portfolio.portfolioImg}
-                                skillsUsed={portfolio.skills}
-                                stateType={portfolio.stateCompleted}
-                                liveState={portfolio.liveState}
-                                urlLive={portfolio.liveLink}
-                                isDarkMode={isDark}
-                            />
-                        ))}
-                    </div>
-                </div>
+        <div className='flex flex-col w-full h-full'>
+            <div className='h-2 border-t-2 border-custom-gold w-1/2 mb-10 mx-auto'></div>
+            <h1 className='mb-20 text-4xl xl:text-6xl arimo text-center arimo'>Portfolio</h1>
+            <div className='w-full h-full flex flex-col items-center mdlg:flex-row gap-5 mdlg:justify-center mdlg:items-start 2xl:justify-start arimo-sec'>
+                {realLifePortfolios.map((portfolio, index) => (
+                    <PortfolioBox
+                        key={index}
+                        workName={portfolio.name}
+                        workDescription={portfolio.description}
+                        workGitHub={portfolio.link}
+                        portfolioImg={portfolio.portfolioImg}
+                        skillsUsed={portfolio.skills}
+                        stateType={portfolio.stateCompleted}
+                        liveState={portfolio.liveState}
+                        urlLive={portfolio.liveLink}
+                        isDarkMode={isDark}
+                    />
+                ))}
             </div>
         </div>
     );
