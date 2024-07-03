@@ -24,6 +24,9 @@ export default {
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
+      'lgxl': '1070px',
+      // => @media (min-width: 1070px) { ... }
+
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const messages = ["Hello", "Bonjour", "Ola", "Hola", "Hallo", "Ciao"];
 
-const Index = () => {
+const Index = ({ scrollToSection, refs }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -13,6 +13,10 @@ const Index = () => {
 
         return () => clearInterval(interval);
     }, []);
+
+    const handleClick = (section) => {
+        scrollToSection(refs[section]);
+    };
 
     return (
         <>
@@ -34,7 +38,7 @@ const Index = () => {
                         <div className='mt-4 flex flex-col'>
                             <p className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl arimo-sec'>I'm Daniel Dias</p>
                             <p className='text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl arimo-sec text-custom-gold'>Full Stack Developer</p>
-                            <button className='w-40 xl:w-60 xl:h-22 text-lg sm:text-xl xl:text-2xl border-4 mt-10 rounded border-white text-white p-2 animate-bounce arimo-sec' onClick={() => scrollToSection(contactRef)}>Contact Me</button>
+                            <button className='w-40 xl:w-60 xl:h-22 text-lg sm:text-xl xl:text-2xl border-4 mt-10 rounded border-white text-white p-2 animate-bounce arimo-sec' onClick={() => handleClick("contactRef")}>Contact Me</button>
                         </div>
                     </div>
 
@@ -69,19 +73,19 @@ const Index = () => {
 
             <div className='mt-5'>
                 <div className='flex flex-col items-center xs:flex-row xs:flex-wrap mdlg:flex-nowrap xs:justify-center gap-y-5 gap-x-5 text-white'>
-                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                    <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
                         <img src="linkedin-light.svg" alt="" className='w-6 2xl:w-8 mb-2' />
                         <p className='arimo-sec text-2xl 2xl:text-4xl'>Linkedin</p>
                     </a>
-                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                    <a href="mailto:danieldias.it98@gmail.com" data-aos="zoom-in" data-aos-duration="1000" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
                         <img src="email-light.svg" alt="" className='w-6 2xl:w-8' />
-                        <p className='arimo-sec text-2xl  2xl:text-4xl'>Email</p>
+                        <p className='arimo-sec text-2xl 2xl:text-4xl'>Email</p>
                     </a>
-                    <a href="" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                    <a href="https://github.com/danielferreira-dias" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
                         <img src="github-light.svg" alt="" className='w-7 2xl:w-9' />
-                        <p className='arimo-sec text-2xl  2xl:text-4xl'>Github</p>
+                        <p className='arimo-sec text-2xl 2xl:text-4xl'>Github</p>
                     </a>
-                    <a href="" className='bg-custom-gold w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg opacity-90 border-white border-2'>
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000" className='bg-custom-gold w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg opacity-90 border-white border-2'>
                         <p className='arimo-sec text-2xl 2xl:text-4xl'>Resume</p>
                     </a>
                 </div>

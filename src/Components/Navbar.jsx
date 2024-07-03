@@ -1,38 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
-
     const [menuVisible, setMenuVisible] = useState(false);
+
 
     const toggleMenu = () => {
         setMenuVisible(!menuVisible);
     };
 
     const menuItems = [
-        { id: 1, label: 'About' },
-        { id: 2, label: 'Skills' },
-        { id: 3, label: 'Experience' },
-        { id: 4, label: 'Portfolio' },
-        { id: 5, label: 'Contact' },
+        { id: 1, label: 'About', section: 'aboutRef' },
+        { id: 2, label: 'Skills', section: 'skillsRef' },
+        { id: 3, label: 'Experience', section: 'experienceRef' },
+        { id: 4, label: 'Portfolio', section: 'portfolioRef' },
+        { id: 5, label: 'Contact', section: 'contactRef' },
     ];
+
+    const handleClick = (section) => {
+        scrollToSection(refs[section]);
+        toggleMenu();
+    };
 
     return (
         <>
             <div className='h-18 w-full py-2 px-8 sm:px-12 xl:px-40 2xl:px-52 sticky lg:relative bg-custom-black opacity-95 lg:opacity-100 top-0 z-50'>
                 <div className="flex justify-between items-center z-10">
-                    <div className='w-24 sm:w-28 mdlg:w-36 lg:w-44'>
+                    <div className='w-24 sm:w-28 mdlg:w-36 lgxl:w-40'>
                         <img src="LOGO.png" alt="" />
                     </div>
-                    <div className='arimo hidden mdlg:flex flex-row text-2xl lg:text-3xl text-white gap-x-5'>
+                    <div className='arimo hidden mdlg:flex flex-row text-2xl text-white gap-x-5'>
                         {menuItems.map(item => (
-                            <div key={item.id} className="py-5 text-white items-center flex flex-row font-semibold hover:transform hover:scale-105 transition-transform hover:text-custom-gold">
-                                <p className='text-lg lg:text-xl mr-1 text-custom-gold font-bold'>&lt;</p>
-                                <a href="" className='text-2xl lg:text-3xl'>{item.label}</a>
-                                <p className='text-lg lg:text-xl ml-1 text-custom-gold font-bold'>&gt;</p>
+                            <div key={item.id} onClick={() => handleClick(item.section)} className="py-5 text-white items-center flex flex-row font-semibold hover:transform hover:scale-105 transition-transform hover:text-custom-gold cursor-pointer"
+                            >
+                                <p className='text-lg lg:text-lg lgxl:text-xl 2xl:text-2xl mr-1 text-custom-gold font-bold'>&lt;</p>
+                                <p className='text-2xl lg:text-2xl lgxl:text-3xl 2xl:text-4xl'>{item.label}</p>
+                                <p className='text-lg lg:text-lg lgxl:text-xl 2xl:text-2xl ml-1 text-custom-gold font-bold'>&gt;</p>
                             </div>
                         ))}
                     </div>
@@ -53,20 +59,21 @@ const Navbar = ({ onDataFromChild, scrollToSection, refs }) => {
                     </div>
                 </div >
             </div>
-            <div className={`fixed text-lg lg:text-xl xl:text-2xl mdlg:hidden top-16 xs:top-16 lg:top-20 xl:top-28 2xl:top-32 right-0 h-screen bg-neutral-800 text-white font-semibold shadow-lg p-2 py-0 z-40 w-2/3 xs:w-80 transition ease-in-out delay-150 duration-300 overflow-auto ${menuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed text-lg lg:text-xl xl:text-2xl mdlg:hidden top-16 xs:top-14 lg:top-20 xl:top-28 2xl:top-32 right-0 h-screen bg-neutral-800 text-white font-semibold shadow-lg p-2 py-0 z-40 w-2/3 xs:w-80 transition ease-in-out delay-150 duration-300 overflow-auto ${menuVisible ? 'translate-x-0' : 'translate-x-full'}`}>
                 <ul className='py-3 arimo text-2xl'>
                     {menuItems.map(item => (
-                        <li key={item.id} className="py-2 border-b-2  border-neutral-950 border-opacity-30 hover:transform hover:scale-105 transition-transform hover:text-custom-gold">
-                            <a href="#" className="p-4 block">{item.label}</a>
+                        <li
+                            key={item.id}
+                            onClick={() => handleClick(item.section)}
+                            className="py-2 border-b-2 border-neutral-950 border-opacity-30 hover:transform hover:scale-105 transition-transform hover:text-custom-gold cursor-pointer"
+                        >
+                            <p className="p-4 block">{item.label}</p>
                         </li>
                     ))}
-                    <li className="py-2 hover:transform hover:scale-105 transition-transform">
-                        <a href="#" className="p-4 block"></a>
-                    </li>
                 </ul>
             </div>
         </>
     );
-}
+};
 
 export default Navbar
