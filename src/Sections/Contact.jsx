@@ -4,9 +4,9 @@ import 'aos/dist/aos.css';
 
 const Contact = ({ isDarkMode }) => {
     return (
-        <div className='flex flex-col w-full h-fit justify-center items-center gap-y-6 text-xs sm:text-sm md:text-lg py-5 '>
+        <div className='flex flex-col w-full h-fit justify-center items-center gap-y-6 text-xs sm:text-sm md:text-lg py-5 mt-20 '>
             <div className='h-fit flex flex-col text-center items-center '>
-                <div className='border-t-2 border-t-custom-gold w-1/2'></div>
+                <div className='border-t-2 border-t-custom-gold w-1/2 mb-10'></div>
                 <div className='flex flex-col gap-y-5 px-5 xs:px-20 lg:px-0 lg:w-1/2 items-center'>
                     <h1 className='my-10 text-4xl xl:text-6xl arimo text-center'>Get in Touch</h1>
                     <p>I'm eager to join a collaborative team where I can contribute my skills and learn from others.

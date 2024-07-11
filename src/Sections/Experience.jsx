@@ -56,28 +56,7 @@ const Experience = ({ isDarkMode }) => {
                     </div>
                 </div>
 
-                <div className='flex flex-row w-full gap-8 h-fit'>
-                    <div className="relative w-fit xs:h-96 sm:h-80">
-                        <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
-                        </span>
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
-                    </div>
-                    <div className=' justify-start  flex flex-col overflow-hidden p-2' data-aos="fade-up" data-aos-duration="1000">
-                        <div className='flex flex-col'>
-                            <h1 className='text-xl'>Universidade da Maia</h1>
-                            <p>09/2018 - 06/2022</p>
-                            <p className='text-sm italic'>Sudent</p>
-                        </div>
-                        <div className='flex flex-col gap-y-2'>
-                            <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.
-                                My coursework and projects provided me with extensive experience in <span className="text-custom-gold font-semibold">Front-End and Back-End Web Development</span>,
-                                as well as <span className="text-custom-gold font-semibold">mobile application development.</span></p>
-                            <p className='mt-2'> Key academic Coursework included Operating Systems, Discrete Mathematics, Object-Oriented Programming.  </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
             <div className='px-5 sm:px-10 xl:px-40 2xl:px-52 h-fit w-full hidden md:block'>
@@ -131,33 +110,6 @@ const Experience = ({ isDarkMode }) => {
                                     interface to create a more engaging experience to ITSector. </p>
                                 <p>This was the opportunity to further improve my knowledge going towards my second year of University.</p>
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div className='flex flex-row justify-start gap-8'>
-                    <div className='flex flex-row w-1/2 h-fit '>
-                        <div className=' justify-between flex  flex-col p-2' data-aos="fade-up" data-aos-duration="1000">
-                            <div className='flex flex-col'>
-                                <h1 className='text-4xl'>Universidade da Maia</h1>
-                                <p className='text-lg'>09/2018 - 06/2022</p>
-                                <p className='text-lg'>Sudent</p>
-                            </div>
-                            <div className='flex flex-col gap-y-2 text-xl lg:text-2xl xl:text-2xl arimo-sec'>
-                                <p className='mt-2'> During my time at Unviersidade da Maia, I developed a strong foundation in both theoretical and practical aspects of computer science.
-                                    My coursework and projects provided me with extensive experience in <span className="text-custom-gold font-semibold">Front-End and Back-End Web Development</span>,
-                                    as well as <span className="text-custom-gold font-semibold">mobile application development.</span></p>
-                                <p className='mt-2'> Key academic Coursework included Operating Systems, Discrete Mathematics, Object-Oriented Programming.  </p>
-                            </div>
-
-                        </div>
-                        <div className="relative w-fit h-96 lg:h-80">
-                            <span className="absolute flex h-3 w-3 z-10 -top-1 -left-1.5">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-900 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-950"></span>
-                            </span>
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0.5 h-full bg-blue-950"></div>
                         </div>
                     </div>
                 </div>
