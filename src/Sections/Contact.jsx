@@ -18,7 +18,7 @@ const Contact = ({ isDarkMode }) => {
                     </div>
 
                     <div className={`flex flex-row justify-center gap-x-8 items-center w-60 h-28 rounded-md border-custom-gold border-2 arimo-sec mt-8 bg-custom-black`}>
-                        <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="https://www.linkedin.com/in/daniel-dias-it/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">
                             <img src={isDarkMode ? "linkedin-light.svg" : "linkedin-dark.svg"} alt="LinkedIn" className="w-4 h-4" />
                         </a>
                         <a href="https://github.com/danielferreira-dias" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000">

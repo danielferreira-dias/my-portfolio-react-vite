@@ -73,7 +73,7 @@ const Index = ({ scrollToSection, refs }) => {
 
             <div className='mt-5'>
                 <div className='flex flex-col items-center xs:flex-row xs:flex-wrap mdlg:flex-nowrap xs:justify-center gap-y-5 gap-x-5 text-white'>
-                    <a href="https://www.linkedin.com/in/daniel-dias-ismai/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
+                    <a href="https://www.linkedin.com/in/daniel-dias-it/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-duration="1000" className='bg-card-color w-4/5 xs:w-2/5 lg:w-1/3 xl:w-1/3 2xl:w-1/4 flex p-5 text-center items-center justify-evenly rounded-lg'>
                         <img src="linkedin-light.svg" alt="" className='w-6 2xl:w-8 mb-2' />
                         <p className='arimo-sec text-2xl 2xl:text-4xl'>Linkedin</p>
                     </a>
