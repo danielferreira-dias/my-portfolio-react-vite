@@ -23,7 +23,7 @@ const Experience = ({ isDarkMode }) => {
                         </div>
                         <div className='flex flex-col gap-y-2'>
                             <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
-                                Further more, I also developed an extensive "info" section, implementing a system to recieve JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
+                                Further more, I also developed an extensive "info" section, implementing a system to receive JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
                                 game to better understanding of the user.
                             </p>
                             <p>I also specialize in <span className="text-custom-gold font-semibold"> developing casino slot games for both mobile and laptop platforms </span> using the
@@ -71,7 +71,7 @@ const Experience = ({ isDarkMode }) => {
                             </div>
                             <div className="text-xl lg:text-2xl xl:text-2xl arimo-sec ">
                                 <p className='mt-2'> Primarily, I developed the game feed which is an integral component that offers users a view of previous gameplay.
-                                    Further more, I also developed an extensive "info" section, implementing a system to recieve JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
+                                    Further more, I also developed an extensive "info" section, implementing a system to receive JSON data and dynamically build elements using JS functions based on JSON values. This section serves as a guide to the many features of the
                                     game to better understanding of the user.
                                 </p>
                                 <p>I also specialize in <span className="text-custom-gold font-semibold"> developing casino slot games for both mobile and laptop platforms </span> using the

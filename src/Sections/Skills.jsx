@@ -56,7 +56,7 @@ const Skills = ({ isDarkMode }) => {
 
                         </div>
                         <div className='w-full 2xs:flex-1 h-44 sm:flex-1 flex justify-center items-center text-center sm:h-auto bg-custom-black rounded-xl'>
-                            <p className='text-2xl lg:text-3xl'>Server Side</p>
+                            <p className='text-2xl lg:text-3xl'>Client Side</p>
                         </div>
                     </div>
                     <div className='flex flex-col sm:flex-row gap-x-4 gap-y-2 h-auto items-stretch'>
